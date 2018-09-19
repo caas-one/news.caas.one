@@ -10,7 +10,7 @@
 
 地址：<http://k8s.today/post/2018-09-19/>
 
-其他：[容器时代志愿编辑招募] <https://mp.weixin.qq.com/s/BVBzWx_u1xfwSZGTO-6qlg>
+[容器时代志愿编辑招募] <https://mp.weixin.qq.com/s/BVBzWx_u1xfwSZGTO-6qlg>
 
 ### 其他
 
