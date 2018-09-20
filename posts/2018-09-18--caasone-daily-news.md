@@ -1,12 +1,4 @@
----
-title: "技术日报(20180921)"
-date: 2018-09-18T20:05:27+08:00
-draft: false
----
-
-
-
-GoCN每日新闻(2018-09-19)
+### GoCN每日新闻(2018-09-19)
 
 
 
@@ -19,8 +11,6 @@ GoCN每日新闻(2018-09-19)
 \4. 部署和运行Go Git服务 <https://jelastic.com/blog/deploy-gogs-go-git-service/>
 
 \5. 如何在循环中使用代码创建goroutine <https://www.reddit.com/r/golang/comments/9gsqdi/how_to_create_goroutines_with_tickers_in_a_loop/>
-
-
 
 
 
