@@ -13,6 +13,7 @@
 \5. 如何在循环中使用代码创建goroutine <https://www.reddit.com/r/golang/comments/9gsqdi/how_to_create_goroutines_with_tickers_in_a_loop/>
 
 6. Test hook1
+7. Test hook 2
 
 
 
