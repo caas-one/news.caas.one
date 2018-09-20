@@ -14,6 +14,7 @@
 
 6. Test hook1
 7. Test hook 2
+8. Test hook 3
 
 
 
