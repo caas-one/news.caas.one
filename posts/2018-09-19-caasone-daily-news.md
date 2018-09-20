@@ -8,7 +8,7 @@
 
 编辑：@lth2015
 
-地址：<http://k8s.today/post/2018-09-19/>
+地址：<http://k8s.today/>
 
 [容器时代志愿编辑招募] <https://mp.weixin.qq.com/s/BVBzWx_u1xfwSZGTO-6qlg>
 
