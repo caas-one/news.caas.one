@@ -1,4 +1,4 @@
-### [容器时代]技术日报(20180919)
+### [容器时代]技术日报(20180921)
 
 1. Linkerd 2.0迎来更新，向着Kubernetes再进一步: <https://mp.weixin.qq.com/s/llMvMe1XfYTlhs8lCDWE_Q>
 2. 记一次Docker/Kubernetes上无法解释的连接超时原因探寻之旅: <https://mp.weixin.qq.com/s/y1b7hh8w5tdnjqF6gtVL-g> 
