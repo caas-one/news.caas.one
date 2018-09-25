@@ -1,4 +1,4 @@
-### [容器时代]技术日报(20180924)
+### [容器时代]技术日报(20180925)
 
 1. Kubernetes NodePort vs LoadBalancer vs Ingress? When should I use what? <https://medium.com/google-cloud/kubernetes-nodeport-vs-loadbalancer-vs-ingress-when-should-i-use-what-922f010849e0>
 2. Dynamically Expand Volume with CSI and Kubernetes <https://kubernetes.io/blog/2018/08/02/dynamically-expand-volume-with-csi-and-kubernetes/>
