@@ -6,7 +6,8 @@
 <http://yulibaozi.com/Article/63>
 3. How to Run HA MySQL on Google Kubernetes Engine (GKE)
 <https://portworx.com/run-ha-mysql-google-kubernetes-engine/>
-4. Hands On With Linkerd 2.0 <https://kubernetes.io/blog/2018/09/18/hands-on-with-linkerd-2.0/>
+4. Hands On With Linkerd 2.0
+<https://kubernetes.io/blog/2018/09/18/hands-on-with-linkerd-2.0/>
 5. Knative：在 Kubernetes 上构建可移植 Serverless 平台
 <https://blog.fleeto.us/post/knative-enables-portable-serverless/>
 
