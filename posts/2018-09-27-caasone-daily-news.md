@@ -1,4 +1,4 @@
-### [容器时代]技术日报(20180927)
+### [容器时代]技术日报(20180928)
 
 1. Kubernetes kubectl 命令自动补全: https://www.abcdocker.com/abcdocker/3245
 2. Google Container Registry(gcr.io) 中国可用镜像(长期维护): https://anjia0532.github.io/2017/11/15/gcr-io-image-mirror/
