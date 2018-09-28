@@ -2,7 +2,7 @@
 
 1. 迄今为止，最好的云计算开源软件 <https://mp.weixin.qq.com/s/FCoYBHIRagPADwEQIpOalQ>
 2. Write a Kubernetes-ready service from zero step-by-step <https://blog.gopheracademy.com/advent-2017/kubernetes-ready-service/>
-3. Logging Architecture <https://kubernetes.io/docs/concepts/cluster-administration/logging/>
+3. Run Kubernetes on Your Laptop <https://aws.amazon.com/cn/blogs/opensource/kubernetes-on-laptop/>
 4. How to Tag #Docker Images without Pulling them <https://dille.name/blog/2018/09/20/how-to-tag-docker-images-without-pulling-them/>
 5. Golang Channel 源码分析 <http://yulibaozi.com/Article/53>
 
