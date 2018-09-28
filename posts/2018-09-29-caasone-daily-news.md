@@ -1,6 +1,6 @@
 ### [容器时代]技术日报(20180927)
 
-1. Introducing kustomize; Template-free Configuration Customization for Kubernetes <https://kubernetes.io/blog/2018/05/29/introducing-kustomize-template-free-configuration-customization-for-kubernetes/>
+1. 迄今为止，最好的云计算开源软件 <https://mp.weixin.qq.com/s/FCoYBHIRagPADwEQIpOalQ>
 2. K8S集群中部署jenkins <http://blog.51cto.com/ylw6006/2159769>
 3. Logging Architecture <https://kubernetes.io/docs/concepts/cluster-administration/logging/>
 4. How to Tag #Docker Images without Pulling them <https://dille.name/blog/2018/09/20/how-to-tag-docker-images-without-pulling-them/>
