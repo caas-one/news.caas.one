@@ -6,7 +6,7 @@
 4. How to Tag #Docker Images without Pulling them <https://dille.name/blog/2018/09/20/how-to-tag-docker-images-without-pulling-them/>
 5. Golang Channel 源码分析 <http://yulibaozi.com/Article/53>
 
-编辑：@windghoul
+编辑：@penpenpenpen
 
 地址：<http://k8s.today/>
 
