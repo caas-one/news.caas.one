@@ -4,7 +4,7 @@
 2. Write a Kubernetes-ready service from zero step-by-step <https://blog.gopheracademy.com/advent-2017/kubernetes-ready-service/>
 3. Run Kubernetes on Your Laptop <https://aws.amazon.com/cn/blogs/opensource/kubernetes-on-laptop/>
 4. 一篇文章读懂分布式通信协议 <https://mp.weixin.qq.com/s/43iLCnp6F0qlNPtv4pYZJQ>
-5. 名词解释：Security Context和PSP <https://www.kubernetes.org.cn/security-context-psp>
+5. kubelet 源码分析：statusManager 和 probeManager <http://cizixs.com/2017/06/12/kubelet-source-code-analysis-part4-status-manager>
 
 编辑：@penpenpenpen
 
