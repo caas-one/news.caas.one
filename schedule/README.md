@@ -3,15 +3,15 @@
 
 |       日期     |   github   |    wechat |
 |:-------------:|:----------:|:---------:|
-|2018-09-24|lth2015|李大伟|
-|2018-09-25|ylck|ylck|
-|2018-09-26|windghoul|李卓|
-|2018-09-27|zhouyuanyuana|ruby(圆圆)|
-|2018-09-28|penpenpenpen|武晨|
-|2018-09-29|esterwang|止之|
+|2018-09-25|lth2015|李大伟|
+|2018-09-26|ylck|ylck|
+|2018-09-27|windghoul|李卓|
+|2018-09-28|zhouyuanyuana|ruby(圆圆)|
+|2018-09-29|penpenpenpen|武晨|
 |2018-09-30|wbtlb|波波可爱多一点|
-|2018-10-01|maxwell92|苗立尧|
-|2018-10-02|qbguan|管清波|
-|2018-10-03|yulibaozi|于立|
-|2018-10-04|SheriffAlan|秦健航|
-|2018-10-05|wujiandong|星璇缘|
+|2018-10-01|esterwang|止之|
+|2018-10-02|maxwell92|苗立尧|
+|2018-10-03|qbguan|管清波|
+|2018-10-04|yulibaozi|于立|
+|2018-10-05|SheriffAlan|秦健航|
+|2018-10-06|wujiandong|星璇缘|
