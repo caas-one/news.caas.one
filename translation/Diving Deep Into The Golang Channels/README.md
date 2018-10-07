@@ -49,3 +49,12 @@ ch := make（chan int，3）
 ```
 
 ![](images/makechan.png)
+
+这意味着什么？如何获得*channel*的数据结构？在进一步讨论之前，我们先看看几个重要的数据结构：
+
+**hchan**结构
+---------
+
+当我们编写`make(chan int, 2)`时，**channel**将从*hchan*结构创建，它的结构如下：
+
+![hchan和waitq结构体](images/hchanstruct.png)
