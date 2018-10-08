@@ -135,7 +135,7 @@ func publishEvent(component *natsutil.StreamingComponent, event *pb.Event) {
 
 每当新事件通过其*gRPC API*作为不可变日志持久化存储到*Event Store*中时，它就会通过*NATS Streaming*服务器发布事件，让其他微服务器知道新事件已发布，因此所有用户微服务都可以对这些事件做出反应。在此示例中，事件从*Event Store API*本身发布到消息传递系统(*NATS Streaming*)中。在实际场景中，它可能来自单个微服务，也可能来自协调单个业务事务跨越多个微服务的*Distributed Saga*。
 
-![Distributed Saga](images/distribute saga.png)
+![Distributed Saga](images/distribute-saga.png)
 
 #### 订阅用于构建反应式微服务的事件
 ---------
