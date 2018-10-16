@@ -59,11 +59,11 @@
 
 下图是示例代码的结构：
 
-![示例代码的目录结构](https://github.com/caas-one/news.caas.one/blob/master/translation/images/codestructure-Building Microservices with Event Sourcing CQRS in Go using gRPC, NATS Streaming and CockroachDB.png)
+![示例代码的目录结构](https://github.com/caas-one/news.caas.one/blob/master/translation/images/codestructure-1009.png)
 
 这是代码的架构图：
 
-![示例代码架构](https://github.com/caas-one/news.caas.one/blob/master/translation/images/architect-Building Microservices with Event Sourcing CQRS in Go using gRPC, NATS Streaming and CockroachDB.png)
+![示例代码架构](https://github.com/caas-one/news.caas.one/blob/master/translation/images/architect-1009.png)
 
 这是示例中的基本工作流程：
 
@@ -135,7 +135,7 @@ func publishEvent(component *natsutil.StreamingComponent, event *pb.Event) {
 
 每当新事件通过其*gRPC API*作为不可变日志持久化存储到*Event Store*中时，它就会通过*NATS Streaming*服务器发布事件，让其他微服务器知道新事件已发布，因此所有用户微服务都可以对这些事件做出反应。在此示例中，事件从*Event Store API*本身发布到消息传递系统(*NATS Streaming*)中。在实际场景中，它可能来自单个微服务，也可能来自协调单个业务事务跨越多个微服务的*Distributed Saga*。
 
-![Distributed Saga](https://github.com/caas-one/news.caas.one/blob/master/translation/images/distribute-saga-Building Microservices with Event Sourcing CQRS in Go using gRPC, NATS Streaming and CockroachDB.png)
+![Distributed Saga](https://github.com/caas-one/news.caas.one/blob/master/translation/images/distribute-saga-1009.png)
 
 #### 订阅用于构建反应式微服务的事件
 ---------
@@ -281,7 +281,7 @@ return nil
 
 这是*Event Store*的不可变日志，用于创建最终的订单:
 
-![](https://github.com/caas-one/news.caas.one/blob/master/translation/images/sqlresult-Building Microservices with Event Sourcing CQRS in Go using gRPC, NATS Streaming and CockroachDB.png)
+![](https://github.com/caas-one/news.caas.one/blob/master/translation/images/sqlresult-1009.png)
 
 *Event Store*的事件表有一个名为*eventdata*的字段，我们将整个事件数据作为*JSON*文档保存到该字段，它对构建应用程序状态以及构建查询视图很有用。
 
