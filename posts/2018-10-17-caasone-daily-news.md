@@ -1,4 +1,4 @@
-[容器时代]技术日报(20181017)
+###[容器时代]技术日报(20181017)
 
 1. Topology-Aware Volume Provisioning in Kubernetes  https://kubernetes.io/blog/2018/10/11/topology-aware-volume-provisioning-in-kubernetes/ 
 2. 后 Kubernetes 时代的微服务  https://blog.csdn.net/yinlongfei_love/article/details/82379124
