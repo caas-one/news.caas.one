@@ -31,9 +31,9 @@ func main() {
 }
 ```
 
-![](images/goroutineA1.jpeg)
+![](https://raw.githubusercontent.com/caas-one/news.caas.one/master/translation/images/goroutineA1-1010.jpeg)
 
-![](images/goroutineA2.jpeg)
+![](https://raw.githubusercontent.com/caas-one/news.caas.one/master/translation/images/goroutineA2-1010.jpeg)
 
 在接收或者发送数据时，*Go*中的*Channel*的责任是使*Goroutine*在*Channel*上阻塞。
 
@@ -48,4 +48,13 @@ func main() {
 ch := make（chan int，3）
 ```
 
-![](images/makechan.png)
+![](https://raw.githubusercontent.com/caas-one/news.caas.one/master/translation/images/makechan-1010.png)
+
+这意味着什么？如何获得*channel*的数据结构？在进一步讨论之前，我们先看看几个重要的数据结构：
+
+**hchan**结构
+---------
+
+当我们编写`make(chan int, 2)`时，**channel**将从*hchan*结构创建，它的结构如下：
+
+![hchan和waitq结构体](https://raw.githubusercontent.com/caas-one/news.caas.one/master/translation/images/hchanstruct-1010.png)
