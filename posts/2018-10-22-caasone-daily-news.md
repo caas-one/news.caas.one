@@ -1,4 +1,4 @@
-[容器时代]技术日报(20181021)
+[容器时代]技术日报(20181022)
 
 1. Istio Helm Chart 详解 - SidecarInjectorWebhook: <https://mp.weixin.qq.com/s/YUEx54gRwp3AdO8qXLAXYQ>
 
