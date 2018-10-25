@@ -11,6 +11,7 @@
 地址：http://k8s.today/
 
 [容器时代志愿编辑招募] https://mp.weixin.qq.com/s/BVBzWx_u1xfwSZGTO-6qlg
+
 [容器时代专属KubeCon福利] 点击链接领取-25%现金优惠☞ https://mp.weixin.qq.com/s/ARUF8fTKn3VUKxFrOShWBQ
 
 ## 其他
