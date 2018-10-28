@@ -21,7 +21,7 @@
 
 当APIserver收到一个停止Pod的请求时，它首先修改了etcd里Pod的状态，并通知关注这个删除事件所有的watcher。这些watcher里包括Kubelet和Endpoint Controller。这两个序列的事件是并行发生的（标记为A和B），如图1所示。
 
-![图1]()
+![图1](https://github.com/caas-one/news.caas.one/blob/master/translation/images/handling-client-request-properly-1.png)
 
 在A系列事件里，你会看到在Kubelet收到该Pod要停止的通知以后会尽快开始停止Pod的一系列操作（执行prestop钩子，发送SIGTERM信号，等待一段时间然后如果这个容器没有自动退出的话就强行杀掉这个容器）。如果应用响应了SIGTERM并迅速停止接收请求，那么任何尝试连接它的客户端都会收到一个Connection Refusd的错误。因为APIserver是直接向Kubelet发送的请求，那么从Pod被删除开始计算，Pod用于执行这段逻辑的时间相当短。
 
@@ -29,7 +29,7 @@
 
 这些请求都是并行发生的。更确切地，关停应用所需要的时间要比iptables更新花费所需的时间稍短一些。这是因为iptables修改的事件链看起来稍微长一些（见图2），因为这些事件需要先到达Endpoints Controller，然后它向APIServer发送一个新请求，接着在Proxy最终修改iptables规则之前，APIserver必须通知到每个KubeProxy。这意味着SIGTERM可能会在所有节点iptables规则更新前发送。
 
-![图2]()
+![图2](https://github.com/caas-one/news.caas.one/blob/master/translation/images/handling-client-requests-properly-2.png)
 
 这个结果就是Pod在收到结束信号后可能仍然会收到来自客户端的请求。如果应用立即停止接收请求，它会导致客户端收到Connection Refused类型的错误（就像在没有定义Readiness探针时，Pod启动但无法对外提供服务时一样）。
 
@@ -55,7 +55,7 @@ Google查了这个问题的解决方案，似乎给Pod添加一个Readiness探�
 
 为了理解在这个过程中连接和请求的情况，请仔细检查图3.
 
-![图3]()
+![图3](https://github.com/caas-one/news.caas.one/blob/master/translation/images/handling-client-requests-properly-3.png)
 
 这与现有的收到停止信号就立即关停进程不是一样的简单，对吧？这一切是值得的吗？这要靠你自己来决定。但是至少你可以添加一个prestop钩子并等待几秒，就像下面所示：
 
