@@ -1,3 +1,9 @@
+--- 
+title: "技术日报(2018-10-25)" 
+date: 2018-10-25T10:28:19+08:00
+categories: [ "daily"]
+draft: false
+---
 ## [容器时代]技术日报(20181025)
 
 1. Kubernetes best practices: Setting up health checks with readiness and liveness probes : https://cloud.google.com/blog/products/gcp/kubernetes-best-practices-setting-up-health-checks-with-readiness-and-liveness-probes

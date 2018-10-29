@@ -1,3 +1,9 @@
+--- 
+title: "技术日报(2018-09-26)" 
+date: 2018-09-26T00:00:00+08:00
+categories: [ "daily"]
+draft: false
+---
 ### [容器时代]技术日报(20180926)
 
 1. Use of Let's Encrypt wildcard certs in Kubernetes

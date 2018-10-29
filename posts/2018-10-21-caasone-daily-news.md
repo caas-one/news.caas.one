@@ -1,3 +1,9 @@
+--- 
+title: "技术日报(2018-10-21)" 
+date: 2018-10-21T00:00:00+08:00
+categories: [ "daily"]
+draft: false
+---
 [容器时代]技术日报(20181021)
 
 1. k8s全栈监控 https://juejin.im/post/5b6592ace51d4515b01c11ed

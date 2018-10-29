@@ -1,3 +1,9 @@
+--- 
+title: "技术日报(2018-10-01)" 
+date: 2018-10-01T00:00:00+08:00
+categories: [ "daily"]
+draft: false
+---
 ### [容器时代]技术日报(20181001)
 
 1. Ubuntu 18.04 离线安装 Kubernetes v1.11.1   https://www.kubernetes.org.cn/4387.html

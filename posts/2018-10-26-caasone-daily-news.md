@@ -1,3 +1,9 @@
+--- 
+title: "技术日报(2018-10-26)" 
+date: 2018-10-25T18:14:31+08:00
+categories: [ "daily"]
+draft: false
+---
 ## [容器时代]技术日报(20181026)
 
 1. Kubernetes 最佳实践：零宕机升级集群  https://chinagdg.org/2018/06/kubernetes-最佳实践：零宕机升级集群/

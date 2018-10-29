@@ -1,3 +1,9 @@
+--- 
+title: "技术日报(2018-10-10)" 
+date: 2018-10-10T00:00:00+08:00
+categories: [ "daily"]
+draft: false
+---
 ### [容器时代]技术日报(20181010)
 
 1. 浅析kube-proxy中IPVS模式：  

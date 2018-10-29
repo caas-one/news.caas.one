@@ -1,3 +1,9 @@
+--- 
+title: "技术日报(2018-09-22)" 
+date: 2018-09-22T00:00:00+08:00
+categories: [ "daily"]
+draft: false
+---
 ### [容器时代]技术日报(20180922)
 
 1. Linkerd 2.0迎来更新，向着Kubernetes再进一步: <https://mp.weixin.qq.com/s/llMvMe1XfYTlhs8lCDWE_Q>

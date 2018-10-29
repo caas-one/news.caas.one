@@ -1,3 +1,9 @@
+--- 
+title: "技术日报(2018-10-27)" 
+date: 2018-10-26T21:50:11+08:00
+categories: [ "daily"]
+draft: false
+---
 ### [容器时代]技术日报(20181027)
 
 1. IPVS-Based In-Cluster Load Balancing Deep Dive: <https://kubernetes.io/blog/2018/07/09/ipvs-based-in-cluster-load-balancing-deep-dive/>

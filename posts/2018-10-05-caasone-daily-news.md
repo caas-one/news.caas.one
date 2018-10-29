@@ -1,3 +1,9 @@
+--- 
+title: "技术日报(2018-10-05)" 
+date: 2018-10-05T00:00:00+08:00
+categories: [ "daily"]
+draft: false
+---
 [容器时代]技术日报(20181005)
 	1. Kubernetes概述：Pods、Nodes、Containers和Clusters https://blog.csdn.net/M2l0ZgSsVc7r69eFdTj/article/details/79104820
   2. kubernetes中port、target port、node port的对比分析，以及kube-proxy代理 https://blog.csdn.net/xinghun_4/article/details/50492041
