@@ -1,3 +1,9 @@
+--- 
+title: "技术日报(2018-10-13)" 
+date: 2018-10-13T00:00:00+08:00
+categories: [ "daily"]
+draft: false
+---
 ## [容器时代]技术日报(20181013)
 
 1. Kubespy:实时查看 Kubernetes资源 https://blog.fleeto.us/post/intro-kubespy/

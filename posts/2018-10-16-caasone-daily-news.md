@@ -1,3 +1,9 @@
+--- 
+title: "技术日报(2018-10-16)" 
+date: 2018-10-16T00:00:00+08:00
+categories: [ "daily"]
+draft: false
+---
 [容器时代]技术日报(20181016)
 
 1. Deploy Your First Deep Learning Model On Kubernetes With Python, Keras, Flask, and Docker https://medium.com/analytics-vidhya/deploy-your-first-deep-learning-model-on-kubernetes-with-python-keras-flask-and-docker-575dc07d9e76

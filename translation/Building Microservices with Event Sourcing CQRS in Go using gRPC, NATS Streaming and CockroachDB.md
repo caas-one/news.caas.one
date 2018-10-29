@@ -1,3 +1,9 @@
+--- 
+title: "Building Microservices with Event Sourcing CQRS in Go using gRPC, NATS Streaming and CockroachDB" 
+date: 2018-10-15T15:03:04+08:00
+categories: [ "translation"]
+draft: false
+---
 使用Golang语言建造EventSourcing/CQRS的微服务
 =============
 

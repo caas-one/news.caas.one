@@ -1,3 +1,9 @@
+--- 
+title: "技术日报(2018-10-12)" 
+date: 2018-10-12T00:00:00+08:00
+categories: [ "daily"]
+draft: false
+---
 ## [容器时代]技术日报(20181012)
 
 1. 面向业务开发者的 k8s 基本命令: https://juejin.im/post/5b53255de51d451949092cba

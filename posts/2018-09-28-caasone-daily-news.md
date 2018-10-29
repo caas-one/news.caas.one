@@ -1,3 +1,9 @@
+--- 
+title: "技术日报(2018-09-28)" 
+date: 2018-09-28T00:00:00+08:00
+categories: [ "daily"]
+draft: false
+---
 ### [容器时代]技术日报(20180928)
 
 1. Kubernetes kubectl 命令自动补全: https://www.abcdocker.com/abcdocker/3245

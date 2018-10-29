@@ -1,3 +1,9 @@
+--- 
+title: "技术日报(2018-10-06)" 
+date: 2018-10-06T00:00:00+08:00
+categories: [ "daily"]
+draft: false
+---
 [容器时代]技术日报(20181006)
   1. KubeDirector: The easy way to run complex stateful applications on Kubernetes: https://kubernetes.io/blog/page/2/
   2. Why You Should Not Neglect Your Developer’s Kubernetes Clusters: https://itnext.io/why-you-should-not-neglect-your-developers-kubernetes-clusters-a658c8ca0e78

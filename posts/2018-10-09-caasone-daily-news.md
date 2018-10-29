@@ -1,3 +1,9 @@
+--- 
+title: "技术日报(2018-10-09)" 
+date: 2018-10-09T00:00:00+08:00
+categories: [ "daily"]
+draft: false
+---
 ### [容器时代]技术日报(20181009)
 
 1. 基于gRPC的健康检查机制：<https://kubernetes.io/blog/2018/10/01/health-checking-grpc-servers-on-kubernetes/>，pb协议定义：<https://github.com/grpc/grpc/blob/v1.15.0/doc/health-checking.md>

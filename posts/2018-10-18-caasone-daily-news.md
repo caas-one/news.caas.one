@@ -1,3 +1,9 @@
+--- 
+title: "技术日报(2018-10-18)" 
+date: 2018-10-18T00:00:00+08:00
+categories: [ "daily"]
+draft: false
+---
 [容器时代]技术日报(20181018)
 
 1. Microk8s puts up its Istio and sails away https://itnext.io/microk8s-puts-up-its-istio-and-sails-away-104c5a16c3c2

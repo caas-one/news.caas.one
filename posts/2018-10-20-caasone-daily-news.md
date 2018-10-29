@@ -1,3 +1,9 @@
+--- 
+title: "技术日报(2018-10-20)" 
+date: 2018-10-20T00:00:00+08:00
+categories: [ "daily"]
+draft: false
+---
 [容器时代]技术日报(20181018)
 
 1. Pod挂载Volume失败问题分析 https://mp.weixin.qq.com/s/L0SYc6vHZN9mZkWpePuoxg

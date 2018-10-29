@@ -1,3 +1,9 @@
+--- 
+title: "Handling-Clients-Requests-Properly-with-Kubernetes" 
+date: 2018-10-28T22:25:27+08:00
+categories: [ "translation"]
+draft: false
+---
 >本文摘自Marko Luksa的《Kubernetes in Actions》
 >无需多言，我们都希望能够更加优雅地处理HTTP请求。显然我们不想在Pod重启或停止的时候产生那些中断的连接。从Kubernetes自身来讲它并不做任何保证。你的应用根据一些规则进行改造来组织中断的连接。这篇文章就一起讨论一下这些规则。
 

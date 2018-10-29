@@ -1,3 +1,9 @@
+--- 
+title: "技术日报(2018-10-11)" 
+date: 2018-10-11T00:00:00+08:00
+categories: [ "daily"]
+draft: false
+---
 ### [容器时代]技术日报(20181011)
 
 1. Kubernetes(k8s)容器运行时(CRI)简介 <https://www.kubernetes.org.cn/1079.html>

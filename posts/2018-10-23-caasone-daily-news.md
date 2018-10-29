@@ -1,3 +1,9 @@
+--- 
+title: "技术日报(2018-10-23)" 
+date: 2018-10-23T00:00:00+08:00
+categories: [ "daily"]
+draft: false
+---
 [容器时代]技术日报(20181023)
 
 1. Kubernetes 容器运行时演进: <https://feisky.xyz/posts/kubernetes-container-runtime/>
