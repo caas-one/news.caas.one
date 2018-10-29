@@ -1,4 +1,4 @@
-[容器时代]技术日报(20181016)
+[容器时代]技术日报(20181029)
 
 1. 为你的Kubernetes集群添加Istio https://medium.com/uptime-99/adopting-istio-in-your-kubernetes-clusters-a3e28ed6f4b7
 2. 定制Kubernetes日志（第一部分） https://medium.com/google-cloud/customizing-kubernetes-logging-part-1-a1e5791dcda8
