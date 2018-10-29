@@ -19,4 +19,6 @@ XXX(文章名)<https://XXX（文章链接）>（已翻译）（windghoul）
 
 #### 文章列表
 
-1. Logging Architecture <https://kubernetes.io/docs/concepts/cluster-administration/logging/>
+1. [Kubernetes Logging Architecture](https://kubernetes.io/docs/concepts/cluster-administration/logging/)
+2. [Building Microservices with Event Sourcing CQRS in Go using gRPC, NATS Streaming and CockroachDB](https://medium.com/@shijuvar/building-microservices-with-event-sourcing-cqrs-in-go-using-grpc-nats-streaming-and-cockroachdb-983f650452aa) 已翻译(@lth2015)
+3. [Handling Client Requests Properly with Kubernetes](https://freecontent.manning.com/handling-client-requests-properly-with-kubernetes/) 已翻译(@maxwell92)
