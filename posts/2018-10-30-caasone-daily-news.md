@@ -7,7 +7,9 @@
 5. Rookout brings breakpoints back to Kubernetes <https://www.rookout.com/pr/rookout_brings_breakpoints_back_to-_kubernetes>
 
 编辑：@qbguan
+
 地址：<http://k8s.today/>
 
 [容器时代志愿编辑招募] <https://mp.weixin.qq.com/s/BVBzWx_u1xfwSZGTO-6qlg>
+
 [容器时代专属KubeCon福利] 点击链接领取-25%现金优惠☞ <https://mp.weixin.qq.com/s/ARUF8fTKn3VUKxFrOShWBQ>
