@@ -26,7 +26,7 @@ XXX(文章名)<https://XXX（文章链接）>（已翻译）（windghoul）
 #### 文章列表
 
 1. [Kubernetes Logging Architecture](https://kubernetes.io/docs/concepts/cluster-administration/logging/)
-2. [Building Microservices with Event Sourcing CQRS in Go using gRPC, NATS Streaming and CockroachDB](https://medium.com/@shijuvar/building-microservices-with-event-sourcing-cqrs-in-go-using-grpc-nats-streaming-and-cockroachdb-98
+2. [Building Microservices with Event Sourcing CQRS in Go using gRPC, NATS Streaming and CockroachDB](https://medium.com/@shijuvar/building-microservices-with-event-sourcing-cqrs-in-go-using-grpc-nats-streaming-and-cockroachdb-98) 已翻译(@lth2015)
 3. [Handling Client Requests Properly with Kubernetes](https://freecontent.manning.com/handling-client-requests-properly-with-kubernetes/) 已翻译(@maxwell92)
 4. [Kubernetes NodePort vs LoadBalancer vs Ingress? When should I use what?](https://medium.com/google-cloud/kubernetes-nodeport-vs-loadbalancer-vs-ingress-when-should-i-use-what-922f010849e0)
 5. [Dynamically Expand Volume with CSI and Kubernetes](https://kubernetes.io/blog/2018/08/02/dynamically-expand-volume-with-csi-and-kubernetes/)
