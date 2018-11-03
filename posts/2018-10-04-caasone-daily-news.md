@@ -1,3 +1,9 @@
+--- 
+title: "技术日报(2018-10-04)" 
+date: 2018-10-04T00:00:00+08:00
+categories: [ "daily"]
+draft: false
+---
 ### [容器时代]技术日报(20181004)
 
 1. Great new book on #Kubernetes security from our @mhausenblas and @lizrice from Aqua Security: https://kubernetes-security.info/ 

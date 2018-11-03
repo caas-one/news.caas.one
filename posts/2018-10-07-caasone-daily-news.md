@@ -1,3 +1,9 @@
+--- 
+title: "技术日报(2018-10-07)" 
+date: 2018-10-07T00:00:00+08:00
+categories: [ "daily"]
+draft: false
+---
 ### [容器时代]技术日报(20181007)
 
 1. 有赞容器化实践 http://dockone.io/article/8271

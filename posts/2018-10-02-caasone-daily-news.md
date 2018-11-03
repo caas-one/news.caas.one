@@ -1,3 +1,9 @@
+--- 
+title: "技术日报(2018-10-02)" 
+date: 2018-10-02T00:00:00+08:00
+categories: [ "daily"]
+draft: false
+---
 [容器时代]技术日报(20181002)
 
 1. Extending Kubernetes with Custom Resources and Operator Frameworks: https://speakerdeck.com/ianlewis/extending-kubernetes-with-custom-resources-and-operator-frameworks

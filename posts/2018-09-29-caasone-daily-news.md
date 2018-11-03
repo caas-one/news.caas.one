@@ -1,3 +1,9 @@
+--- 
+title: "技术日报(2018-09-29)" 
+date: 2018-09-29T00:00:00+08:00
+categories: [ "daily"]
+draft: false
+---
 ### [容器时代]技术日报(20180927)
 
 1. 迄今为止，最好的云计算开源软件 <https://mp.weixin.qq.com/s/FCoYBHIRagPADwEQIpOalQ>
