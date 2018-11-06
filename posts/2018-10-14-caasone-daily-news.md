@@ -1,3 +1,9 @@
+--- 
+title: "技术日报(2018-10-14)" 
+date: 2018-10-14T00:00:00+08:00
+categories: [ "daily"]
+draft: false
+---
 ### [容器时代]技术日报(20181014)
 
 1. Service mesh data plane vs. control plane: <https://blog.envoyproxy.io/service-mesh-data-plane-vs-control-plane-2774e720f7fc>

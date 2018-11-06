@@ -1,3 +1,9 @@
+--- 
+title: "技术日报(2018-09-30)" 
+date: 2018-09-30T00:00:00+08:00
+categories: [ "daily"]
+draft: false
+---
 ### [容器时代]技术日报(20180930)
 
 1. 深度剖析Kubernetes API Server三部曲 - Part 1: <https://mp.weixin.qq.com/s/k8epe_rgvpQnduEauayQGA>

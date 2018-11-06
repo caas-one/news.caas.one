@@ -1,3 +1,9 @@
+--- 
+title: "技术日报(2018-10-15)" 
+date: 2018-10-15T00:00:00+08:00
+categories: [ "daily"]
+draft: false
+---
 ### [容器时代]技术日报(20181015)
 
 1. Kubernetes Infrastructure

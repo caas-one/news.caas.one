@@ -1,4 +1,10 @@
-[容器时代]技术日报(20181021)
+--- 
+title: "技术日报(2018-10-22)" 
+date: 2018-10-22T09:41:00+08:00
+categories: [ "daily"]
+draft: false
+---
+[容器时代]技术日报(20181022)
 
 1. Istio Helm Chart 详解 - SidecarInjectorWebhook: <https://mp.weixin.qq.com/s/YUEx54gRwp3AdO8qXLAXYQ>
 

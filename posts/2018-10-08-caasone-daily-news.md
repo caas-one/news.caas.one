@@ -1,3 +1,9 @@
+--- 
+title: "技术日报(2018-10-08)" 
+date: 2018-10-08T00:00:00+08:00
+categories: [ "daily"]
+draft: false
+---
 ﻿[容器时代]技术日报（20181008）
 1.超详细的认证授权机制  https://www.jianshu.com/p/bb973ab1029b
 2.k8s如何定义CRI、CNI、CSI接口  https://hk.saowen.com/a/ff516ade79b8b24cecd8606ec57b1aaa80c34c2428e2276a8d870fcfc861f1cb
