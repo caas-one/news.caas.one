@@ -1,3 +1,9 @@
+--- 
+title: "技术日报(2018-09-27)" 
+date: 2018-09-27T00:00:00+08:00
+categories: [ "daily"]
+draft: false
+---
 ### [容器时代]技术日报(20180927)
 
 1. Introducing kustomize; Template-free Configuration Customization for Kubernetes <https://kubernetes.io/blog/2018/05/29/introducing-kustomize-template-free-configuration-customization-for-kubernetes/>
