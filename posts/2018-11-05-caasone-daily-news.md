@@ -1,13 +1,13 @@
-[容器时代]技术日报(20181105)
+#### [容器时代]技术日报(20181106)
 
-1. Service Mesh深度学习系列（一）| istio pilot-agent模块分析: 
-<http://www.sel.zju.edu.cn/?p=831>
-2. Promethues 监控 Kubernetes 集群节点: <https://www.qikqiak.com/k8s-book/docs/54.%E7%9B%91%E6%8E%A7Kubernetes%E9%9B%86%E7%BE%A4%E8%8A%82%E7%82%B9.html>
-3. Knative: Configuration, Routes and Revisions: <https://blog.openshift.com/knative-configurations-routes-and-revisions/>
-4. The Unexpected Kubernetes: Part 2: Volume and Many Ways of Persisting Data: <https://rancher.com/blog/2018/2018-10-11-unexpected-kubernetes-part-2/>
-5. Istio Helm Chart 详解 - Galley: <https://blog.fleeto.us/post/istio-helm-deep-dive-galley/>
+1. Topology-Aware Volume Provisioning in Kubernetes <https://kubernetes.io/blog/2018/10/11/topology-aware-volume-provisioning-in-kubernetes/>
+2. 初试 Kubernetes 集群中使用 Contour 反向代理 <https://www.kubernetes.org.cn/4779.html>
+3. 深入浅出聊聊Kubernetes存储（一）：详解Kubernetes存储关键概念 <http://dockone.io/article/8338>
+4. kubernetes-水平Pod自动伸缩 <https://www.kubernetes.org.cn/4664.html>
+5. Istio Routing极简教程 <http://dockone.io/article/8337>
 
-编辑：ylck
+
+编辑：windghoul
 
 地址：http://k8s.today/
 
