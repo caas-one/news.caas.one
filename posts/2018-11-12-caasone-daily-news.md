@@ -1,3 +1,9 @@
+--- 
+title: "技术日报(2018-11-12)" 
+date: 2018-11-12T00:00:00+08:00
+categories: [ "daily"]
+draft: false
+---
 [容器时代]技术日报(20181112)
 
 1. K8s Start Up Race Conditions https://medium.com/pareture/k8s-start-up-race-conditions-6901953d2ec1

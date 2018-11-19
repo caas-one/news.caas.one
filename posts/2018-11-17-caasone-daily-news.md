@@ -1,3 +1,9 @@
+--- 
+title: "技术日报(2018-11-17)" 
+date: 2018-11-17T00:00:00+08:00
+categories: [ "daily"]
+draft: false
+---
   [容器时代]技术日报(20181117)
 
 1. Fluntbit: 云原生环境日志收集的挑战: <https://www.youtube.com/watch?v=msi6yNlItCk>

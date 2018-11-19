@@ -1,3 +1,9 @@
+--- 
+title: "技术日报(2018-10-31)" 
+date: 2018-10-31T00:00:00+08:00
+categories: [ "daily"]
+draft: false
+---
 ### [容器时代]技术日报(20181031)
 
 1. 一个GO语言性能问题的发现和解决 <https://zhuanlan.zhihu.com/p/47940999>

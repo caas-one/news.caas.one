@@ -1,3 +1,9 @@
+--- 
+title: "技术日报(2018-11-08)" 
+date: 2018-11-08T00:00:00+08:00
+categories: [ "daily"]
+draft: false
+---
 ## [容器时代]技术日报(20181108)
 
 1. 阿里云Kubernetes实战2–搭建基础服务 https://www.kubernetes.org.cn/4666.html

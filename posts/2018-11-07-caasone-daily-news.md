@@ -1,3 +1,9 @@
+--- 
+title: "技术日报(2018-11-07)" 
+date: 2018-11-07T00:00:00+08:00
+categories: [ "daily"]
+draft: false
+---
 ## [容器时代]技术日报(20181107)
 
 1. Is kubernetes too complicated? : https://medium.com/@betz.mark/is-kubernetes-too-complicated-1ffd8a3a6fb4

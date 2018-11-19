@@ -1,3 +1,9 @@
+--- 
+title: "技术日报(2018-11-03)" 
+date: 2018-11-03T00:00:00+08:00
+categories: [ "daily"]
+draft: false
+---
 [容器时代]技术日报(20181103)
 
 1. 不同的视角解读Docker和Kubernetes https://dzone.com/articles/docker-containers-and-kubernetes-an-architectural

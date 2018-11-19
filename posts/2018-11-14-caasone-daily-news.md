@@ -1,3 +1,9 @@
+--- 
+title: "技术日报(2018-11-14)" 
+date: 2018-11-14T00:00:00+08:00
+categories: [ "daily"]
+draft: false
+---
 [容器时代]技术日报(20181114)
 
 1  深入理解K8S APIServer 运行时及代码重构 https://mp.weixin.qq.com/s/A4gyrerc_0Yh4_ht8fCKhQ 

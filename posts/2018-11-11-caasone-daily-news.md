@@ -1,3 +1,9 @@
+--- 
+title: "技术日报(2018-11-11)" 
+date: 2018-11-11T00:00:00+08:00
+categories: [ "daily"]
+draft: false
+---
 [容器时代]技术日报(20181111)
 
 1. 谁在运行我的Kubernetes Pod？容器运行时的过去、现在和未来 https://www.infoq.com/articles/container-runtimes-kubernetes

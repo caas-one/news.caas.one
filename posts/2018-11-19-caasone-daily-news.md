@@ -1,3 +1,9 @@
+--- 
+title: "技术日报(2018-11-19)" 
+date: 2018-11-19T00:00:00+08:00
+categories: [ "daily"]
+draft: false
+---
 #### [容器时代]技术日报(20181119)
 
 1. [容器技术在钱包节点部署中的优化策略](https://www.kubernetes.org.cn/4854.html)

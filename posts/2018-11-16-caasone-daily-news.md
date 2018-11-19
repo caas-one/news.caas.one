@@ -1,3 +1,9 @@
+--- 
+title: "技术日报(2018-11-16)" 
+date: 2018-11-16T00:00:00+08:00
+categories: [ "daily"]
+draft: false
+---
 [容器时代]技术日报(20181116)
 
 1.Kubernetes并发控制与数据一致性的实现原理  https://blog.csdn.net/jackxuf/article/details/80084358
