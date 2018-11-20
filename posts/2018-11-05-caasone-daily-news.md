@@ -1,3 +1,9 @@
+--- 
+title: "技术日报(2018-11-05)" 
+date: 2018-11-05T00:00:00+08:00
+categories: [ "daily"]
+draft: false
+---
 #### [容器时代]技术日报(20181106)
 
 1. Topology-Aware Volume Provisioning in Kubernetes <https://kubernetes.io/blog/2018/10/11/topology-aware-volume-provisioning-in-kubernetes/>

@@ -1,3 +1,9 @@
+--- 
+title: "技术日报(2018-11-04)" 
+date: 2018-11-04T00:00:00+08:00
+categories: [ "daily"]
+draft: false
+---
 [容器时代]技术日报(20181104)
 
 1. SRE: 弹性——使用Enovy实现速率控制: <https://medium.com/dm03514-tech-blog/sre-resiliency-bolt-on-sidecar-rate-limiting-with-envoy-sidecar-5381bd4a1137>

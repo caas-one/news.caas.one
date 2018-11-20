@@ -1,3 +1,9 @@
+--- 
+title: "技术日报(2018-11-10)" 
+date: 2018-11-10T00:00:00+08:00
+categories: [ "daily"]
+draft: false
+---
 ### [容器时代]技术日报(20181110)
 
 1. Why Docker containers will take over the world  https://www.pluralsight.com/blog/it-ops/docker-containers-take-over-world

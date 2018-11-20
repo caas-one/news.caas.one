@@ -1,3 +1,9 @@
+--- 
+title: "技术日报(2018-10-28)" 
+date: 2018-10-28T00:00:00+08:00
+categories: [ "daily"]
+draft: false
+---
 ### [容器时代]技术日报(20181028)
 
 1. OpenShift的DevOps工具链 http://www.chenshake.com/openshift-devops-tool-chain/

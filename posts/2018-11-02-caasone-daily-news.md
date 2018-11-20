@@ -1,3 +1,9 @@
+--- 
+title: "技术日报(2018-11-02)" 
+date: 2018-11-02T00:00:00+08:00
+categories: [ "daily"]
+draft: false
+---
 [容器时代]技术日报(20181102)
 
 1.云原生可移植性的神话 https://blog.csdn.net/yinlongfei_love/article/details/83576589

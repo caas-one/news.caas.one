@@ -1,3 +1,9 @@
+--- 
+title: "Understanding-resources-limits-in-kubernetes-cpu" 
+date: 2018-10-15T15:03:04+08:00
+categories: [ "translation"]
+draft: false
+---
 深入理解Kubernetes资源限制：CPU
 -----------
 

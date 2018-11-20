@@ -1,3 +1,9 @@
+--- 
+title: "技术日报(2018-10-30)" 
+date: 2018-10-30T00:00:00+08:00
+categories: [ "daily"]
+draft: false
+---
 ### [容器时代]技术日报(20181030)
 
 1. 使用Helm优化Kubernetes下的研发体验：实现持续交付流水线 <https://mp.weixin.qq.com/s/b-ab5TkkGppSFBnY0Uxkmw>
