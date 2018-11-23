@@ -1,3 +1,9 @@
+--- 
+title: "技术日报(2018-11-21)" 
+date: 2018-11-21T19:17:43+08:00
+categories: [ "daily"]
+draft: false
+---
 ## [容器时代]技术日报(20181121)
 
 1. 跨集群服务——实现Kubernetes应用的高可用 http://dockone.io/article/1561

@@ -1,3 +1,9 @@
+--- 
+title: "Dynamically Expand Volume with CSI and Kubernetes" 
+date: 2018-11-19T21:12:18+08:00
+categories: [ "translation"]
+draft: false
+---
 Kubernetes本身具有包含了具有大量用例且功能强大的存储子系统。然而，如果我们利用Kubernetes建设关系数据库平台，就需要面临一个挑战：建立数据存储。本文用来讲述如何扩展CSI(容器存储接口)0.2.0同时整合Kubernetes，并且展示了动态扩容的重要性。
 
 简介

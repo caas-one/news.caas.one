@@ -1,3 +1,9 @@
+--- 
+title: "技术日报(2019-11-20)" 
+date: 2018-11-19T21:12:32+08:00
+categories: [ "daily"]
+draft: false
+---
 ## [容器时代]技术日报(20181120)
 
 1. 手把手教你打造高效的 Kubernetes 命令行终端 : https://www.hi-linux.com/posts/44953.html
