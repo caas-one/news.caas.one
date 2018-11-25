@@ -1,3 +1,9 @@
+--- 
+title: "技术日报(2018-11-25)" 
+date: 2018-11-25T00:00:00+08:00
+categories: [ "daily"]
+draft: false
+---
 [容器时代]技术日报(20181125)
 
 1. Benchmark results of Kubernetes network plugins (CNI) over 10Gbit/s network https://medium.com/@infrabuilder/benchmark-results-of-kubernetes-network-plugins-cni-over-10gbit-s-network-36475925a560
