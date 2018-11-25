@@ -1,3 +1,9 @@
+--- 
+title: "技术日报(2018-11-23)" 
+date: 2018-11-23T00:00:00+08:00
+categories: [ "daily"]
+draft: false
+---
 ### [容器时代]技术日报(20181123)
 
 1.  本机搭建三节点k8s集群  http://www.importnew.com/30489.html

@@ -1,3 +1,9 @@
+--- 
+title: "技术日报(2018-11-24)" 
+date: 2018-11-24T00:00:00+08:00
+categories: [ "daily"]
+draft: false
+---
 [容器时代]技术日报(20181124)
 
 1. 为Kubernetes开发团队优化集群资源使用 https://www.weave.works/blog/optimizing-cluster-resources-for-kubernetes-team-development 
