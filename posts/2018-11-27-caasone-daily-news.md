@@ -1,3 +1,9 @@
+--- 
+title: "技术日报(2018-11-27)" 
+date: 2018-11-27T10:59:40+08:00
+categories: [ "daily"]
+draft: false
+---
 [容器时代]技术日报(20181127)
 
 1. Solving Serverless Cold Starts with Advanced Tooling https://hackernoon.com/serverless-cold-starts-using-them-to-your-advantage-3dfdf9a0bc66
