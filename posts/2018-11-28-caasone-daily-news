@@ -1,0 +1,13 @@
+[容器时代]技术日报(20181128)
+
+1. Docker ENTRYPOINT & CMD: Dockerfile best practices https://medium.freecodecamp.org/docker-entrypoint-cmd-dockerfile-best-practices-abc591c30e21
+2. Kubernetes:批处理作业 https://medium.com/google-cloud/kubernetes-running-background-tasks-with-batch-jobs-56482fbc853
+3. Configuring minimal RBAC permissions for Helm and Tiller  https://medium.com/@elijudah/configuring-minimal-rbac-permissions-for-helm-and-tiller-e7d792511d10
+4. 网易云不同场景 K8S 网络实践方案 https://mp.weixin.qq.com/s?__biz=MzU1OTAzNzc5MQ==&mid=2247486653&idx=1&sn=367e20d6cd74702de523006a34b5c976
+5. Testing Kubernetes RBAC https://medium.com/yld-engineering-blog/testing-kubernetes-rbac-5e00dc93af8e
+
+编辑：yulibaozi
+
+地址：http://k8s.today/
+
+[容器时代志愿编辑招募] https://mp.weixin.qq.com/s/BVBzWx_u1xfwSZGTO-6qlg
