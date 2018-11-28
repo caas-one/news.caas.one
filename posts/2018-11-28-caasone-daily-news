@@ -1,3 +1,9 @@
+--- 
+title: "技术日报(2018-11-28)" 
+date: 2018-11-28T08:27:36Z
+categories: [ "daily"]
+draft: false
+---
 [容器时代]技术日报(20181128)
 
 1. Docker ENTRYPOINT & CMD: Dockerfile best practices https://medium.freecodecamp.org/docker-entrypoint-cmd-dockerfile-best-practices-abc591c30e21
