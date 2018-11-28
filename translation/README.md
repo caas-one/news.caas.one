@@ -29,7 +29,7 @@ XXX(文章名)<https://XXX（文章链接）>（已翻译）（windghoul）
 2. [Building Microservices with Event Sourcing CQRS in Go using gRPC, NATS Streaming and CockroachDB](https://medium.com/@shijuvar/building-microservices-with-event-sourcing-cqrs-in-go-using-grpc-nats-streaming-and-cockroachdb-98) 已翻译(@lth2015)
 3. [Handling Client Requests Properly with Kubernetes](https://freecontent.manning.com/handling-client-requests-properly-with-kubernetes/) 已翻译(@maxwell92)
 4. [Kubernetes NodePort vs LoadBalancer vs Ingress? When should I use what?](https://medium.com/google-cloud/kubernetes-nodeport-vs-loadbalancer-vs-ingress-when-should-i-use-what-922f010849e0)
-5. [Dynamically Expand Volume with CSI and Kubernetes](https://kubernetes.io/blog/2018/08/02/dynamically-expand-volume-with-csi-and-kubernetes/)已翻译(@SheriffAlan)
+5. [ally Expand Volume with CSI and Kubernetes](https://kubernetes.io/blog/2018/08/02/ally-expand-volume-with-csi-and-kubernetes/)已翻译(@SheriffAlan)
 6. [Understanding Kubernetes networking: ingress](https://medium.com/google-cloud/understanding-kubernetes-networking-ingress-1bc341c84078)
 7. [Use of Let's Encrypt wildcard certs in Kubernetes](https://rimusz.net/lets-encrypt-wildcard-certs-in-kubernetes/)
 8. [How to Run HA MySQL on Google Kubernetes Engine](https://portworx.com/run-ha-mysql-google-kubernetes-engine/)

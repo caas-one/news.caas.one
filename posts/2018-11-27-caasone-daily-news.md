@@ -8,6 +8,7 @@ draft: false
 
 1. Solving Serverless Cold Starts with Advanced Tooling https://hackernoon.com/serverless-cold-starts-using-them-to-your-advantage-3dfdf9a0bc66
 2. Using Kubernetes ConfigMap Resources for Dynamic Apps  https://medium.com/capital-one-tech/using-kubernetes-configmap-resources-for-dynamic-apps-9e23ef589121
+3. Serverless Streaming At Scale with Cosmos DB https://medium.com/@mauridb/serverless-streaming-at-scale-with-cosmos-db-e0e26cacd27d
 4. 使用Deployment和NodeSelector来部署有状态的应用 https://medium.com/@jmarhee/using-nodeselector-to-schedule-deployments-with-large-volumes-of-stateful-data-on-kubernetes-46bd3ac6059d
 5. QA Environments on Demand with Kubernetes https://engineering.dollarshaveclub.com/qa-environments-on-demand-with-kubernetes-5a571b4e273c
 
