@@ -1,3 +1,9 @@
+--- 
+title: "技术日报(2018-12-01)" 
+date: 2018-12-01T09:54:58+08:00
+categories: [ "daily"]
+draft: false
+---
 ## [容器时代]技术日报(20181201)
 
 - 1、[Building Optimized Containers for Kubernetes](https://www.digitalocean.com/community/tutorials/building-optimized-containers-for-kubernetes)
