@@ -1,3 +1,9 @@
+--- 
+title: "技术日报(2018-11-30)" 
+date: 2018-12-01T09:54:31+08:00
+categories: [ "daily"]
+draft: false
+---
 [容器时代]技术日报（20181130）
 
 1.DynamoDB on Localhost  https://medium.com/devopslinks/dynamodb-on-localhost-9c502f07056e
