@@ -1,3 +1,9 @@
+--- 
+title: "技术日报(2018-12-02)" 
+date: 2018-12-02T21:28:38+08:00
+categories: [ "daily"]
+draft: false
+---
 ## [容器时代]技术日报(20181202)
 
 - 1、kubewatch: 一个custom controller的示例: <https://engineering.bitnami.com/articles/kubewatch-an-example-of-kubernetes-custom-controller.html>
