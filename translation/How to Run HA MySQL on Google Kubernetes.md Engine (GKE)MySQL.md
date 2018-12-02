@@ -13,14 +13,21 @@
 [*How to Backup and Restore MySQL on Red Hat OpenShift*](https://portworx.com/backup-restore-mysql-red-hat-openshift/)
 
 现在进入正题...
+
 谷歌[*Kubernetes Engine(GKE)*](https://cloud.google.com/kubernetes-engine/)是一个用于在谷歌云平台中部署容器化应用程序的托管、可生产的环境。GKE于2015年上线，是第一个基于谷歌在容器中运营Gmail、YouTube等服务12年多经验的托管容器平台之一。为了完全消除对安装，管理，和操作Kubernetes集群的需要，GKE允许客户快速安装和运行Kubernetes。
+
 Portworx是一个用于运行部署在多种编排引擎（包括Kubernetes）的持久性工作负载的云本地存储平台。利用Portworx，用户可以根据其选择利用任意框架和任意容器和容器调度管理数据库。无论服务运行在哪里，Portworx都能为有状态服务提供独立的数据管理层。
 本教程介绍了在GKE上部署和管理高可用MySQL数据库的步骤。
 总之，在谷歌云平台运行HA MySQL，你需要：
+
 1、部署一个GKE集群
+
 2、在GKE上安装类似Portworx的云本地存储解决方案作为守护进程组
+
 3、创建存储类来定义存储需求，例如复制因子、快照策略，性能概要
+
 4、利用Kubernetes部署MySQL
+
 5、通过杀死或禁止调度节点检测故障转移
 
 #### 如何部署GKE集群
