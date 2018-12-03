@@ -1,3 +1,9 @@
+--- 
+title: "How to Run HA MySQL on Google Kubernetes.md Engine (GKE)MySQL" 
+date: 2018-12-03T16:48:03+08:00
+categories: [ "translation"]
+draft: false
+---
 # 如何在Google Kubernetes Engine上运行HA MySQL
 
 ![Social-Graphic](https://github.com/caas-one/news.caas.one/blob/master/translation/images/Twitter-Social-Graphic-85.png?raw=true)
