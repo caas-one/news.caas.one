@@ -1,3 +1,9 @@
+--- 
+title: "技术日报(2019-12-05)" 
+date: 2018-12-05T19:35:24+08:00
+categories: [ "daily"]
+draft: false
+---
 ## [容器时代]技术日报(20181205)
 
 - 1、kubeedge源码分析系列一：总体架构分析: <http://www.sel.zju.edu.cn/?p=989>
