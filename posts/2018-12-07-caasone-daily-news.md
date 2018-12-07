@@ -1,3 +1,9 @@
+--- 
+title: "技术日报(2018-12-07)" 
+date: 2018-12-07T10:44:33+08:00
+categories: [ "daily"]
+draft: false
+---
 ## [容器时代]技术日报(20181207)
 
 1. 图解 Kubernetes 架构 : https://www.hi-linux.com/posts/48037.html
