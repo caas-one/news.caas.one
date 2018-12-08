@@ -1,4 +1,4 @@
-## [容器时代]技术日报(20181207)
+## [容器时代]技术日报(20181208)
 
 1. 安全事故：Kubernetes遭遇大范围劫持  https://mp.weixin.qq.com/s/KKwM0oGXvZ0rmlmpLjnl8A
 2. Managed Kubernetes: AWS vs. Azure vs. Google Cloud  https://www.infoworld.com/article/3317559/kubernetes/managed-kubernetes-aws-vs-azure-vs-google-cloud.html  
