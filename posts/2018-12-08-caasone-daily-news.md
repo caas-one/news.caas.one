@@ -1,3 +1,9 @@
+--- 
+title: "技术日报(2018-12-08)" 
+date: 2018-12-09T19:38:42+08:00
+categories: [ "daily"]
+draft: false
+---
 ## [容器时代]技术日报(20181208)
 
 1. 安全事故：Kubernetes遭遇大范围劫持  https://mp.weixin.qq.com/s/KKwM0oGXvZ0rmlmpLjnl8A
