@@ -1,3 +1,9 @@
+--- 
+title: "技术日报(2018-12-11)" 
+date: 2018-12-11T13:30:01+08:00
+categories: [ "daily"]
+draft: false
+---
 [容器时代]技术日报(20181211)
 
 1. 生产可用的kubeadm https://kubernetes.io/blog/2018/12/04/production-ready-kubernetes-cluster-creation-with-kubeadm/ 
