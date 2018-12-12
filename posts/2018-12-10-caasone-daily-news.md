@@ -1,3 +1,9 @@
+--- 
+title: "技术日报(2018-12-10)" 
+date: 2018-12-12T14:24:14+08:00
+categories: [ "daily"]
+draft: false
+---
 ### [容器时代]技术日报(20181210)
 
 1. Kubernetes设计理念。https://feisky.gitbooks.io/kubernetes/architecture/concepts.html
