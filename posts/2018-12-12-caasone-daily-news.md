@@ -1,3 +1,9 @@
+--- 
+title: "技术日报(2018-12-12)" 
+date: 2018-12-12T14:24:40+08:00
+categories: [ "daily"]
+draft: false
+---
 [容器时代]技术日报(20181212)
 
 1. Red Hat contributes etcd to the CNCF https://www.redhat.com/en/blog/red-hat-contributes-etcd-cornerstone-kubernetes-cloud-native-computing-foundation
