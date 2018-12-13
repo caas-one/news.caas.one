@@ -1,3 +1,9 @@
+--- 
+title: "技术日报(2018-12-13)" 
+date: 2018-12-13T08:59:47+08:00
+categories: [ "daily"]
+draft: false
+---
 [容器时代]技术日报(20181213)
 
 1. CRI Shimv2：一种 Kubernetes 集成容器运行时的新思路 https://www.infoq.cn/article/r*ikOvovTHhADAWw1Hb1
