@@ -1,3 +1,9 @@
+--- 
+title: "技术日报(2018-12-14)" 
+date: 2018-12-14T09:40:42+08:00
+categories: [ "daily"]
+draft: false
+---
 [容器时代]技术日报(20181214)
 
 1 在Kubernetes上运行区块链服务（BaaS）
