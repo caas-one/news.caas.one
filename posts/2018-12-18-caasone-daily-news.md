@@ -4,7 +4,7 @@
 - 2、[官方 issue 关于 time.sleep 7 次 syscall 的讨论](https://github.com/golang/go/issues/25471#issuecomment-391906366)
 - 3、[Docker components explained](http://alexander.holbreich.org/docker-components-explained/)
 - 4、[Containerd Brings More Container Runtime Options for Kubernetes](https://kubernetes.io/blog/2017/11/containerd-container-runtime-options-kubernetes/)
-- 5、[]()
+- 5、[Extending Kubernetes APIs with Custom Resource Definitions (CRDs)](https://medium.com/velotio-perspectives/extending-kubernetes-apis-with-custom-resource-definitions-crds-139c99ed3477)
 
 编辑: 漠然
 
