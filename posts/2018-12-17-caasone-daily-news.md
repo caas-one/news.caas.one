@@ -1,3 +1,9 @@
+--- 
+title: "技术日报(2018-12-17)" 
+date: 2018-12-18T10:40:34+08:00
+categories: [ "daily"]
+draft: false
+---
 [容器时代]技术日报(20181217)
 
 1. Serverless vs Container   http://www.servicemesher.com/blog/serverless-vs-containers/
