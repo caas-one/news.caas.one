@@ -1,3 +1,9 @@
+--- 
+title: "技术日报(2018-12-18)" 
+date: 2018-12-18T10:40:52+08:00
+categories: [ "daily"]
+draft: false
+---
 ## [容器时代]技术日报(20181218)
 
 - 1、[Go语言下的线程模型](https://studygolang.com/articles/16126)
