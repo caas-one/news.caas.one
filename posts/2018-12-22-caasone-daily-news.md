@@ -9,7 +9,7 @@ draft: false
 - 1、大闹 KubeCon：Istio 已成 Cloud Native 新宠？:
 <https://blog.fleeto.us/post/has-istio-become-the-new-cn-darling>
 - 2、Kubernetes Monitoring 101 — Core pipeline & Services Pipeline: <https://medium.com/magalix/kubernetes-monitoring-101-core-pipeline-services-pipeline-a34cd4cc9627>
-- 3  As We May Kube*: 
+- 3、As We May Kube*: 
 - <https://itnext.io/as-we-may-kube-293b30c0a365>
 - 4、Meet kn—a Kubernetes native experience: <https://hackernoon.com/meet-kn-a-kubernetes-native-experience-bd87239a11ff>
 - 5、Modernizing Applications for Kubernetes: <https://dev.to/digitalocean/modernizing-applications-for-kubernetes-1hon>
