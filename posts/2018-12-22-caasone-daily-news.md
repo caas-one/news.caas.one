@@ -1,9 +1,3 @@
---- 
-title: "技术日报(2018-12-22)" 
-date: 2018-12-22T15:34:30+08:00
-categories: [ "daily"]
-draft: false
----
 ## [容器时代]技术日报(20181222)
 
 - 1、大闹 KubeCon：Istio 已成 Cloud Native 新宠？:
