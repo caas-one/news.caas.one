@@ -1,3 +1,9 @@
+--- 
+title: "技术日报(2018-12-21)" 
+date: 2018-12-24T22:28:19+08:00
+categories: [ "daily"]
+draft: false
+---
 ## [容器时代]技术日报(20181221)
 
 - 1、Kubernetes 基础知识普及好文章 - 什么是Kubernetes：<https://mp.weixin.qq.com/s/NqBb4FG5cVkoUkqQu7XOlg>
