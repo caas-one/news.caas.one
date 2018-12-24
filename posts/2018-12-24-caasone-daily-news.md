@@ -1,3 +1,9 @@
+--- 
+title: "技术日报(2018-12-24)" 
+date: 2018-12-24T22:27:53+08:00
+categories: [ "daily"]
+draft: false
+---
 ## [容器时代]技术日报(20181224)
 
 1. Harbor v1.7: 新鲜出炉 : https://mp.weixin.qq.com/s/dPYxOVOYU8yJzaTeIOAj2g
