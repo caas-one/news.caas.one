@@ -17,19 +17,19 @@ Requests是被调度器用来调度任务的依据。任务可以使用Requests�
 
 #### Quality of Service
 通过设置Limits和Requests可以为任务分配不同的QoS等级，最好的QoS等级（Pods拥有可以完成任务所需的资源，每个节点运行了尽可能多的Pod）设置取决于任务的需求。
-![]()
+![](https://raw.githubusercontent.com/caas-one/news.caas.one/master/translation/images/optimizing-kubernetes-resource-allocation-production-1.png)
 
 ##### Guaranteed QoS
 Guaranteed等级的QoS通过设置任务资源的Limits就可以实现。这表示一个容器可以使用调度器调度参考时指明的资源数量。这种策略有利于对CPU敏感的任务和相对可预测的任务。例如一个在处理请求的Web服务器。
-![]()
+![](https://raw.githubusercontent.com/caas-one/news.caas.one/master/translation/images/optimizing-kubernetes-resource-allocation-production-2.png)
 
 ##### Burstable QoS
 Burstable等级的QoS通过同时设置任务资源的Limits和低于Limits值的Requests进行指定。这意味着容器至少能得到Requests设置的资源，同时在节点拥有足够资源的情况下，最多不能使用超过Limits设置的资源。这对于拥有较短资源使用周期，或者那些需要密集初始化过程的任务来说很有用。比如一个构建Docker容器的worker，或者一个运行了未优化JVM进程的容器。
-![]()
+![](https://raw.githubusercontent.com/caas-one/news.caas.one/master/translation/images/optimizing-kubernetes-resource-allocation-production-3.png)
 
 ##### Best-Effort QoS
 Best-Effort等级的QoS不需要通过设置Requests或Limits来指定。也就是说容器可以使用所在机器上的任何可用资源。从调度器的角度看这是最低优先级的任务，同时这样的任务会在拥有Burstable等级QoS和Guaranteed等级QoS的任务之前被杀掉。这种QoS等级适用于可中断的和优先级较低的应用，比如迭代运行的幂等优化进程。
-![]()
+![](https://raw.githubusercontent.com/caas-one/news.caas.one/master/translation/images/optimizing-kubernetes-resource-allocation-production-4.png)
 
 ### 设置Requests和Limits
 给任务设置合适的Requests和Limits的关键是找到单个Pod Crash的那个点。我们可以通过使用一些不同的性能测试技术，在应用部署到生产环境前，先理解它发生Crash的各种不同情况。几乎每个应用到达极限时都有自己的失败模式。
@@ -46,23 +46,23 @@ memory: 50Mi # 50 Mebibytes
 
 #### 加速测试（Ramp-Up Test）
 加速测试随着时间增加负载，直到服务失败或者测试完成
-![]()
+![](https://raw.githubusercontent.com/caas-one/news.caas.one/master/translation/images/optimizing-kubernetes-resource-allocation-production-5.png)
 
 如果加速测试突然失败，这是一个很好的迹象表示着资源Limits限制太小。如果观察到一个突变，增加两倍资源Limits直到测试成功结束。
-![]()
+![](https://raw.githubusercontent.com/caas-one/news.caas.one/master/translation/images/optimizing-kubernetes-resource-allocation-production-6.png)
 
 当资源Limits接近最优（至少对Web服务来说）时，性能会随着时间可预见地降低。
-![]()
+![](https://raw.githubusercontent.com/caas-one/news.caas.one/master/translation/images/optimizing-kubernetes-resource-allocation-production-7.png)
 
 如果当负载继续增加时性能不再变化，可能说明我们给这个任务分配了过多的资源。
 
 #### 持续测试（Duration Test）
 在加速测试和调整Limits之后，是时候执行一个持续测试了。持续测试是在任务失败点之前持续运行施加一段恒定的负载（至少10分钟，但是越长越好）。
 
-![]()
+![](https://raw.githubusercontent.com/caas-one/news.caas.one/master/translation/images/optimizing-kubernetes-resource-allocation-production-8.png)
 
 这个测试的目的是为了鉴别那些在短期加速测试中不易捕获的内存泄露或者隐藏的队列技术问题。如果在这个期间进行调整，他们应该足够小（>10%改变）。一个好的结果会展示在测试时间性能是比较稳定的。
-![]()
+![](https://raw.githubusercontent.com/caas-one/news.caas.one/master/translation/images/optimizing-kubernetes-resource-allocation-production-9.png)
 
 #### 记录失败日志
 当执行上述测试时，记录服务的性能表现以及失败的原因是很重要的。失败模式可以记录到各种文档里，后面会为生产环境中的问题提供参照。我们测试时发现的一些失败模式：
@@ -80,11 +80,11 @@ memory: 50Mi # 50 Mebibytes
 
 #### Loader.IO
 Loader.IO是一个压力测试服务。它让我们可以配置加速测试和持续测试，并可视化应用运行时的性能和负载情况，和实现测试的快速启停。它存储了历史测试结果，所以很容易根据资源限制变化来比较测试结果。
-![]()
+![](https://raw.githubusercontent.com/caas-one/news.caas.one/master/translation/images/optimizing-kubernetes-resource-allocation-production-10.png)
 
 #### Kubescope CLI
 Kubescope CLI是一个运行在Kubernetes上（或本地）的工具，可以从Docker(通过插件）收集和可视化容器Metrics（译作指标）。它使用类似于cAdvisor或者其他集群指标采集服务，每秒都进行采集（而不是每隔10~15秒）。如果使用10~15秒的采集间隔，你可能会错过本来测试中可以发现的瓶颈。使用cAdvisor的情况下，你不得不在每次任务资源超过阈值和Kubernetes杀掉该Pod之后寻找新Pod。Kubescope CLI直接从Docker采集指标从而修复了这个问题（或者你自行设置采集间隔），并且使用正则表达式来选择和过滤你想要可视化的Pod。
-![]()
+![](https://raw.githubusercontent.com/caas-one/news.caas.one/master/translation/images/optimizing-kubernetes-resource-allocation-production-11.gif)
 
 ### 结论
 我发现阻碍服务成为生产就绪的一个最难的问题就是你不知道它什么时候和如何失败。我希望你可以从我的错误和这些关于在你的Deployments上设置资源Limits和Requests的技术中有所收获。这可以为你的系统增加更多的弹性和可预测性，同时也会让你的顾客满意，让你能睡得更香。
