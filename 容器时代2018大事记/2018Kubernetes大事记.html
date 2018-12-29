@@ -60,7 +60,7 @@
 						</span> 行Go代码
 					</span>
 				</h1>
-				<p>2018年Kubernetes稳定发展，社区贡献依旧活跃，Kubernetes占领了绝大部分市场，已经成为容器编排领域的实施标准。大多数公有云厂商纷纷提供了自己的Kubernetes服务。国内Kubernetes技术圈持续火爆，2018年11月，KubeCon首次在上海举行，2500名国内外容器领域的顶级开发者齐聚上海，共襄盛举。<br><br>
+				<p>2018年Kubernetes稳定发展，社区贡献依旧活跃，Kubernetes占领了绝大部分市场，已经成为容器编排领域的事实标准。大多数公有云厂商纷纷提供了自己的Kubernetes服务。国内Kubernetes技术圈持续火爆，2018年11月，KubeCon首次在上海举行，2500名国内外容器领域的顶级开发者齐聚上海，共襄盛举。<br><br>
                     在2018年的钟声敲响之际，让我们回顾过去一年Kubernetes的发展轨迹，更好地迎接K8s的新一年的辉煌！
                 </p>
 				<!----><div ng-if="app.isOnOrBeforeState(&#39;student_signup_open&#39;)">
@@ -214,12 +214,12 @@
 					<li style="margin:0 0 0 16px; list-style:none; border-left:2px solid #666; padding:.3em 0 .3em 20px; position:relative;"><span style="position:absolute; left:0">—</span>【SIG-ibmcloud】新增 ibmcloud 支持，SIG-ibmcloud 开始关注 SIG 的建立并与 SIG 成员共享 IBM Clouds 正在进行的 Kubernetes 工作，如可伸缩性测试、Kubernetes 升级策略等，并开始处理将云提供程序代码移动到公共 GitHub repo 的过程。 </li>
 					<li style="margin:0 0 0 16px; list-style:none; border-left:2px solid #666; padding:.3em 0 .3em 20px; position:relative;"><span style="position:absolute; left:0">—</span>【SIG-instrumentation】没有实现新的功能，主要在原功能基础上对 metrics-server 内部结构大量重构，以及对一些错误进行修复。 </li>
 					<li style="margin:0 0 0 16px; list-style:none; border-left:2px solid #666; padding:.3em 0 .3em 20px; position:relative;"><span style="position:absolute; left:0">—</span>【SIG-node】Node 将 PoStActoPrimeNAMSePosits 配置特性从 alpha 转换为 beta。该特性允许 Pod 规范请求 Pod 中的所有容器共享公共进程 Namespace。其中添加了两个 alpha 特征： </li>
-					<li style="margin:0 0 0 16px; list-style:none; border-left:2px solid #666; padding:.3em 0 .3em 20px; position:relative;"><span style="position:absolute; left:0"></span> 	1. RunTimeCas.alpha 让节点能够对多个运行时选项进行支持，以支持多种工作负载类型。包括 native linux containers 与 “sandboxed” containers，实现将容器与宿主内核隔离；</li>
+					<li style="margin:0 0 0 16px; list-style:none; border-left:2px solid #666; padding:.3em 0 .3em 20px; position:relative;"><span style="position:absolute; left:0"></span> 	1. RunTimeClass.alpha 让节点能够对多个运行时选项进行支持，以支持多种工作负载类型。包括 native linux containers 与 “sandboxed” containers，实现将容器与宿主内核隔离；</li>
 					<li style="margin:0 0 0 16px; list-style:none; border-left:2px solid #666; padding:.3em 0 .3em 20px; position:relative;"><span style="position:absolute; left:0">—</span> 	2. CustomCFSQuota.alpha 让节点管理员能够更改用于在节点上强制执行 CFS 配额的默认周期。提高某些工作负载的性能，工作负载在使用 CFS 配额和默认测量周期时经历延迟。</li>
 					<li style="margin:0 0 0 16px; list-style:none; border-left:2px solid #666; padding:.3em 0 .3em 20px; position:relative;"><span style="position:absolute; left:0">—</span>【SIG-OpenStack】OpenStack 继续在修复 bug 和不断完善自身功能。新功能主要在 OpenStack 自身开发完成，并继续推动 OpenStack 与 Kubernetes 之间集成。内部错误修复和改进包括 </li>
 					<li style="margin:0 0 0 16px; list-style:none; border-left:2px solid #666; padding:.3em 0 .3em 20px; position:relative;"><span style="position:absolute; left:0"></span> 	1. 修复在没有 VIP 的情况下负载均衡器状态；</li>
 					<li style="margin:0 0 0 16px; list-style:none; border-left:2px solid #666; padding:.3em 0 .3em 20px; position:relative;"><span style="position:absolute; left:0"></span> 	2. 修复服务器状态过滤</li>
-					<li style="margin:0 0 0 16px; list-style:none; border-left:2px solid #666; padding:.3em 0 .3em 20px; position:relative;"><span style="position:absolute; left:0"></span> 	3. 修复 Cinder volum 的 PVC 大小；</li>
+					<li style="margin:0 0 0 16px; list-style:none; border-left:2px solid #666; padding:.3em 0 .3em 20px; position:relative;"><span style="position:absolute; left:0"></span> 	3. 修复 Cinder volume 的 PVC 大小；</li>
 					<li style="margin:0 0 0 16px; list-style:none; border-left:2px solid #666; padding:.3em 0 .3em 20px; position:relative;"><span style="position:absolute; left:0"></span> 	4. 添加在云配置中未定义负载均衡器配置，则禁用该负载均衡器配置；</li>
 					<li style="margin:0 0 0 16px; list-style:none; border-left:2px solid #666; padding:.3em 0 .3em 20px; position:relative;"><span style="position:absolute; left:0"></span> 	5. 添加对节点关闭 taint 的支持。</li>
 					<li style="margin:0 0 0 16px; list-style:none; border-left:2px solid #666; padding:.3em 0 .3em 20px; position:relative;"><span style="position:absolute; left:0">—</span>【SIG-scheduling】Scheduling 方面主要集中提高调度器性能和可靠性方面开发，主要体现在以下几方面： </li>
