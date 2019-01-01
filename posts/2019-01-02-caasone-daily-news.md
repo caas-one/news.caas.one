@@ -3,8 +3,8 @@
 - 1、[Thoughts on Go performance optimization](https://github.com/dgryski/go-perfbook)
 - 2、[Go code refactoring : the 23x performance hunt](https://medium.com/@val_deleplace/go-code-refactoring-the-23x-performance-hunt-156746b522f7)
 - 3、[Microservices in Go](https://medium.com/seek-blog/microservices-in-go-2fc1570f6800)
-- 4、[]()
-- 5、[]()
+- 4、[Golang Reflection](https://golangbot.com/reflection/)
+- 5、[Getting to Go: The Journey of Go's Garbage Collector](https://blog.golang.org/ismmkeynote)
 
 编辑: 漠然
 
