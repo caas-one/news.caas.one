@@ -8,7 +8,7 @@ draft: false
 
 - 1、Kubernetes? Docker? What is the difference?: <https://blog.containership.io/k8svsdocker/>
 - 2、DigitalOcean Launches Managed Kubernetes Service: <https://www.infoq.com/news/2018/12/digitalocean-managed-kubernetes>
-- 3  Etcd: Current status and future roadmap: <https://kubernetes.io/blog/2018/12/11/etcd-current-status-and-future-roadmap/>
+- 3、Etcd: Current status and future roadmap: <https://kubernetes.io/blog/2018/12/11/etcd-current-status-and-future-roadmap/>
 - 4、HashiCorp Improves Consul Service Mesh Integration with Kubernetes: <https://www.infoq.com/news/2018/11/consul-kubernetes>
 - 5、Extending your Kubernetes Cluster: <https://kubernetes.io/docs/concepts/extend-kubernetes/extend-cluster/>
 
