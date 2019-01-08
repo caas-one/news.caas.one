@@ -1,4 +1,4 @@
-## [容器时代]技术日报(20190109)
+## [容器时代]技术日报(20190108)
 
 1. k8s支持arm64硬件架构的总结 : https://jeremy-xu.oschina.io/2018/12/arm64%E7%A1%AC%E4%BB%B6%E6%9E%B6%E6%9E%84%E6%94%AF%E6%8C%81%E6%80%BB%E7%BB%93/
 2. calico 跨网段问题 : https://blog.csdn.net/mailjoin/article/details/79695463
