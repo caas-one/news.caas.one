@@ -3,7 +3,7 @@
 - 1、[Pimp My Kubernetes Shell](https://itnext.io/pimp-my-kubernetes-shell-f144710232a0)
 - 2、[How to build a smaller Docker image](https://medium.com/@gdiener/how-to-build-a-smaller-docker-image-76779e18d48a)
 - 3、[Six Strategies for Application Deployment](https://medium.com/@joaogabriellima/six-strategies-for-application-deployment-351579f7aa62)
-- 4、[]()
+- 4、[Monitoring Your Apps in Kubernetes Environment with Prometheus](https://medium.com/kubernetes-tutorials/monitoring-your-kubernetes-deployments-with-prometheus-5665eda54045)
 - 5、[]()
 
 编辑: 漠然
