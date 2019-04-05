@@ -1,10 +1,10 @@
 ## [容器时代]技术日报(20190407)
 
 - 1、[Writing Your First Kubernetes Operator](https://medium.com/devopslinks/writing-your-first-kubernetes-operator-8f3df4453234)
-- 2、[]()
-- 3、[]()
-- 4、[]()
-- 5、[]()
+- 2、[How to fully utilise Docker during development](https://medium.com/tsftech/how-to-fully-utilise-docker-during-development-42bb3cdc3017)
+- 3、[CI CD Pipeline: Learn How to Setup a CI CD Pipeline From Scratch](https://medium.com/edureka/ci-cd-pipeline-5508227b19ca)
+- 4、[katalog-sync: Reliable Integration of Consul and Kubernetes](https://medium.com/wish-engineering/katalog-sync-reliable-integration-of-consul-and-kubernetes-ebe8aae0852a)
+- 5、[Istio Routing Basics](https://medium.com/google-cloud/istio-routing-basics-14feab3c040e)
 
 编辑: 漠然
 
