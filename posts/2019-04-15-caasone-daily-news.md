@@ -1,4 +1,4 @@
-## [容器时代]技术日报(201904515)
+## [容器时代]技术日报(20190415)
 
 1. 浅谈Kubernetes生产架构 ：https://www.kubernetes.org.cn/5200.html
 2. Kubectl 效率提升指北 ： https://www.kubernetes.org.cn/5269.html
