@@ -25,19 +25,21 @@ XXX(文章名)<https://XXX（文章链接）>（已翻译）（windghoul）
 以[Kubernetes vs Docker](https://www.sumologic.com/blog/kubernetes-vs-docker/)为例:
 
 1. Fork当前仓库到自己的Github
-![](forkk-it.png)
+![](https://github.com/caas-one/news.caas.one/blob/master/translation/images/fork-it.jpg)
+![](https://github.com/caas-one/news.caas.one/blob/master/translation/images/forking-it.jpg)
 
 2. Clone自己的仓库到个人电脑本地
-![](clone-it.png)
+![](https://github.com/caas-one/news.caas.one/blob/master/translation/images/clone-it.jpg)
+![](https://github.com/caas-one/news.caas.one/blob/master/translation/images/cloning-it.jpg)
 
 3. 打开原文，完成翻译，并将markdown格式的译文保存到本地目录
-![](translate-then-save.png)
+![](https://github.com/caas-one/news.caas.one/blob/master/translation/images/translate-then-save.jpg)
 
 4. 推送到自己的远程仓库
 ![](push-origin.png)
 
 5. 提交合并请求
-![](submit-pull-request.png)
+![](https://github.com/caas-one/news.caas.one/blob/master/translation/images/submitting-merge-request.jpg)
 
 6. 审核完毕，合并到主仓库
 ![](approved-to-merge.png)
