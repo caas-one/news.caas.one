@@ -21,7 +21,29 @@ translation ---- 路径下为翻译后文章，文章命名格式为 文章名.m
 
 XXX(文章名)<https://XXX（文章链接）>（已翻译）（windghoul）
 
+#### 操作示例
+以[Kubernetes vs Docker](https://www.sumologic.com/blog/kubernetes-vs-docker/)为例:
 
+1. Fork当前仓库到自己的Github
+![](forkk-it.png)
+
+2. Clone自己的仓库到个人电脑本地
+![](clone-it.png)
+
+3. 打开原文，完成翻译，并将markdown格式的译文保存到本地目录
+![](translate-then-save.png)
+
+4. 推送到自己的远程仓库
+![](push-origin.png)
+
+5. 提交合并请求
+![](submit-pull-request.png)
+
+6. 审核完毕，合并到主仓库
+![](approved-to-merge.png)
+
+7. 发表到社区
+![](publish-to-community.png)
 
 #### 文章列表
 
