@@ -34,15 +34,16 @@ XXX(文章名)<https://XXX（文章链接）>（已翻译）（windghoul）
 
 3. 打开原文，完成翻译，并将markdown格式的译文保存到本地目录
 ![](https://github.com/caas-one/news.caas.one/blob/master/translation/images/translate-then-save.jpg)
+![](https://github.com/caas-one/news.caas.one/blob/master/translation/images/translating-and-save.jpg)
 
 4. 推送到自己的远程仓库
-![](push-origin.png)
+![](https://github.com/caas-one/news.caas.one/blob/master/translation/images/translating-then-save.jpg)
 
 5. 提交合并请求
 ![](https://github.com/caas-one/news.caas.one/blob/master/translation/images/submitting-merge-request.jpg)
 
 6. 审核完毕，合并到主仓库
-![](approved-to-merge.png)
+![](https://github.com/caas-one/news.caas.one/blob/master/translation/images/reviewing.jpg)
 
 7. 发表到社区
 ![](publish-to-community.png)
