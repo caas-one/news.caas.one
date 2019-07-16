@@ -1,4 +1,4 @@
---- 
+---
 title: "README" 
 date: 2018-10-15T15:0s4+08:00
 categories: [ "translation"]
@@ -50,12 +50,12 @@ XXX(文章名)<https://XXX（文章链接）>（已翻译）（windghoul）
 
 #### 文章列表
 
-1. [Kubernetes Logging Architecture](https://kubernetes.io/docs/concepts/cluster-administration/logging/)
+1. [Kubernetes Logging Architecture](https://kubernetes.io/docs/concepts/cluster-administration/logging/) 已翻译(@Bucky Barenes)
 2. [Building Microservices with Event Sourcing CQRS in Go using gRPC, NATS Streaming and CockroachDB](https://medium.com/@shijuvar/building-microservices-with-event-sourcing-cqrs-in-go-using-grpc-nats-streaming-and-cockroachdb-98) 已翻译(@lth2015)
 3. [Handling Client Requests Properly with Kubernetes](https://freecontent.manning.com/handling-client-requests-properly-with-kubernetes/) 已翻译(@maxwell92)
 4. [Kubernetes NodePort vs LoadBalancer vs Ingress? When should I use what?](https://medium.com/google-cloud/kubernetes-nodeport-vs-loadbalancer-vs-ingress-when-should-i-use-what-922f010849e0)
-5. [ally Expand Volume with CSI and Kubernetes](https://kubernetes.io/blog/2018/08/02/ally-expand-volume-with-csi-and-kubernetes/)已翻译(@SheriffAlan)
-6. [Understanding Kubernetes networking: ingress](https://medium.com/google-cloud/understanding-kubernetes-networking-ingress-1bc341c84078)
+5. [Dynamically Expand Volume with CSI and Kubernetes](https://kubernetes.io/blog/2018/08/02/ally-expand-volume-with-csi-and-kubernetes/)已翻译(@SheriffAlan)
+6. [Understanding Kubernetes networking: ingress](https://medium.com/google-cloud/understanding-kubernetes-networking-ingress-1bc341c84078) 正在翻译ing（7月15日）
 7. [Use of Let's Encrypt wildcard certs in Kubernetes](https://rimusz.net/lets-encrypt-wildcard-certs-in-kubernetes/)
 8. [How to Run HA MySQL on Google Kubernetes Engine](https://portworx.com/run-ha-mysql-google-kubernetes-engine/)已翻译(@SheriffAlan)
 9. [Hands On with Linkerd 2.0](https://kubernetes.io/blog/2018/09/18/hands-on-with-linkerd-2.0/)
@@ -66,10 +66,10 @@ XXX(文章名)<https://XXX（文章链接）>（已翻译）（windghoul）
 14. [How, and When, to Deploy Serverless](https://thenewstack.io/how-and-when-to-deploy-serverless/)
 15. [In-depth introduction to Kubernetes admission webhooks](https://banzaicloud.com/blog/k8s-admission-webhooks/)
 16. [Debug a Kubernetes Service Locally with Telepresence](https://articles.microservices.com/debug-a-kubernetes-service-locally-with-telepresence-675eb6e94b09)
-17. [https://medium.com/@masroor.hasan/tracing-infrastructure-with-jaeger-on-kubernetes-6800132a677](https://medium.com/@masroor.hasan/tracing-infrastructure-with-jaeger-on-kubernetes-6800132a677)
+17. [Distributed Tracing Infrastructure with Jaeger on Kubernetes](https://medium.com/@masroor.hasan/tracing-infrastructure-with-jaeger-on-kubernetes-6800132a677)
 18. [Cortex: Stateful Prometheus Monitoring for Multiple Clients](https://thenewstack.io/cortex-stateful-prometheus-monitoring-for-multiple-clients/)
-19. [Health checking gRPC servers on Kubernetes](https://kubernetes.io/blog/2018/10/01/health-checking-grpc-servers-on-kubernetes/)
-20. [Modernizing Applications for Kubernetes](https://www.digitalocean.com/community/tutorials/modernizing-applications-for-kubernetes)
+19. [Health checking gRPC servers on Kubernetes](https://kubernetes.io/blog/2018/10/01/health-checking-grpc-servers-on-kubernetes/) 已翻译(@SheriffAlan)
+20. [Modernizing Applications for Kubernetes](https://www.digitalocean.com/community/tutorials/modernizing-applications-for-kubernetes) 已翻译(@ky11n)
 21. [Using pod security policies with kubeadm](https://pmcgrath.net/using-pod-security-policies-with-kubeadm)
 22. [Unbabel migrated to Kubernetes and you won’t believe what happened next!](https://medium.com/unbabel/unbabel-migrated-to-kubernetes-and-you-wont-believe-what-happened-next-b39f082def1c) 
 23. [Be as Serverless as You Can, but Not More than That](https://dzone.com/articles/be-as-serverless-as-you-can-but-not-more-than-that)
@@ -128,6 +128,10 @@ XXX(文章名)<https://XXX（文章链接）>（已翻译）（windghoul）
 76. [Rookout brings breakpoints back to Kubernetes](https://www.rookout.com/pr/rookout_brings_breakpoints_back_to-_kubernetes)
 77. [Effectively Managing Kubernetes Resources with Cost Monitoring](https://medium.com/kubecost/effectively-managing-kubernetes-with-cost-monitoring-96b54464e419)
 78. [Best practices for building Kubernetes Operators and stateful apps](https://cloud.google.com/blog/products/containers-kubernetes/best-practices-for-building-kubernetes-operators-and-stateful-apps)
-79. [Unit Testing with the Kubernetes Client Library](https://matt-rickard.com/kubernetes-unit-testing/)
+79. [Unit Testing with the Kubernetes Client Library](https://matt-rickard.com/kubernetes-unit-testing/) 已翻译(@esterwang)
 80. [Understanding resource limits in Kubernetes-memory](https://medium.com/@betz.mark/understanding-resource-limits-in-kubernetes-memory-6b41e9a955f9) 已翻译(@maxwell92)
 81. [Understanding resource limits in Kubernetes-cpu](https://medium.com/@betz.mark/understanding-resource-limits-in-kubernetes-memory-6b41e9a955f://medium.com/@betz.mark/understanding-resource-limits-in-kubernetes-cpu-time-9eff74d3161b) 已翻译(@maxwell92)
+82. [Testing Microservices, the sane way](https://medium.com/@copyconstruct/testing-microservices-the-sane-way-9bb31d158c16) 正在翻译ing（7月14日）
+83. [Diving Deep Into The Golang Channels](https://codeburst.io/diving-deep-into-the-golang-channels-549fd4ed21a8) 已翻译(@windghoul)
+84. [Kubernetes-vs-Docker](https://www.sumologic.com/blog/kubernetes-vs-docker/) 已翻译（@ky11n、@wxppp、@zcxcurry30、@Bucky Barenes、@esterwang）
+85. [Optimizing-Kubernetes-resource-allocation-in-production](https://opensource.com/article/18/12/optimizing-kubernetes-resource-allocation-production?utm_campaign=intrel) 已翻译(@maxwell92)
