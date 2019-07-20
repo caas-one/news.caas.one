@@ -53,21 +53,21 @@ XXX(文章名)<https://XXX（文章链接）>（已翻译）（windghoul）
 1. [Kubernetes Logging Architecture](https://kubernetes.io/docs/concepts/cluster-administration/logging/) 已翻译(@Bucky Barenes)
 2. [Building Microservices with Event Sourcing CQRS in Go using gRPC, NATS Streaming and CockroachDB](https://medium.com/@shijuvar/building-microservices-with-event-sourcing-cqrs-in-go-using-grpc-nats-streaming-and-cockroachdb-98) 已翻译(@lth2015)
 3. [Handling Client Requests Properly with Kubernetes](https://freecontent.manning.com/handling-client-requests-properly-with-kubernetes/) 已翻译(@maxwell92)
-4. [Kubernetes NodePort vs LoadBalancer vs Ingress? When should I use what?](https://medium.com/google-cloud/kubernetes-nodeport-vs-loadbalancer-vs-ingress-when-should-i-use-what-922f010849e0)
+4. [Kubernetes NodePort vs LoadBalancer vs Ingress? When should I use what?](https://medium.com/google-cloud/kubernetes-nodeport-vs-loadbalancer-vs-ingress-when-should-i-use-what-922f010849e0)正在翻译ing
 5. [Dynamically Expand Volume with CSI and Kubernetes](https://kubernetes.io/blog/2018/08/02/ally-expand-volume-with-csi-and-kubernetes/)已翻译(@SheriffAlan)
 6. [Understanding Kubernetes networking: ingress](https://medium.com/google-cloud/understanding-kubernetes-networking-ingress-1bc341c84078) 已翻译(@hyw-1228)
-7. [Use of Let's Encrypt wildcard certs in Kubernetes](https://rimusz.net/lets-encrypt-wildcard-certs-in-kubernetes/)
+7. [Use of Let's Encrypt wildcard certs in Kubernetes](https://rimusz.net/lets-encrypt-wildcard-certs-in-kubernetes/)正在翻译ing
 8. [How to Run HA MySQL on Google Kubernetes Engine](https://portworx.com/run-ha-mysql-google-kubernetes-engine/)已翻译(@SheriffAlan)
-9. [Hands On with Linkerd 2.0](https://kubernetes.io/blog/2018/09/18/hands-on-with-linkerd-2.0/)
-10. [Introducing Kustomize; Template-free Configuration Customization for Kubernetes](https://kubernetes.io/blog/2018/05/29/introducing-kustomize-template-free-configuration-customization-for-kubernetes/)
-11. [How to Tag #Docker Images without Pulling them](https://dille.name/blog/2018/09/20/how-to-tag-docker-images-without-pulling-them/)
-12. [Resizing Persistent Volumes using Kubernetes](https://kubernetes.io/blog/2018/07/12/resizing-persistent-volumes-using-kubernetes/) 
+9. [Hands On with Linkerd 2.0](https://kubernetes.io/blog/2018/09/18/hands-on-with-linkerd-2.0/)正在翻译ing
+10. [Introducing Kustomize; Template-free Configuration Customization for Kubernetes](https://kubernetes.io/blog/2018/05/29/introducing-kustomize-template-free-configuration-customization-for-kubernetes/)正在翻译ing
+11. [How to Tag #Docker Images without Pulling them](https://dille.name/blog/2018/09/20/how-to-tag-docker-images-without-pulling-them/)已翻译(@esterwang)
+12. [Resizing Persistent Volumes using Kubernetes](https://kubernetes.io/blog/2018/07/12/resizing-persistent-volumes-using-kubernetes/) 已翻译(@esterwang)
 13. [Extending Kubernetes with Custom Resources and Operator Frameworks](https://speakerdeck.com/ianlewis/extending-kubernetes-with-custom-resources-and-operator-frameworks)
 14. [How, and When, to Deploy Serverless](https://thenewstack.io/how-and-when-to-deploy-serverless/)
 15. [In-depth introduction to Kubernetes admission webhooks](https://banzaicloud.com/blog/k8s-admission-webhooks/)
 16. [Debug a Kubernetes Service Locally with Telepresence](https://articles.microservices.com/debug-a-kubernetes-service-locally-with-telepresence-675eb6e94b09)
 17. [Distributed Tracing Infrastructure with Jaeger on Kubernetes](https://medium.com/@masroor.hasan/tracing-infrastructure-with-jaeger-on-kubernetes-6800132a677)
-18. [Cortex: Stateful Prometheus Monitoring for Multiple Clients](https://thenewstack.io/cortex-stateful-prometheus-monitoring-for-multiple-clients/)
+18. [Cortex: Stateful Prometheus Monitoring for Multiple Clients](https://thenewstack.io/cortex-stateful-prometheus-monitoring-for-multiple-clients/) 已翻译(@esterwang)
 19. [Health checking gRPC servers on Kubernetes](https://kubernetes.io/blog/2018/10/01/health-checking-grpc-servers-on-kubernetes/) 已翻译(@SheriffAlan)
 20. [Modernizing Applications for Kubernetes](https://www.digitalocean.com/community/tutorials/modernizing-applications-for-kubernetes) 已翻译(@ky11n)
 21. [Using pod security policies with kubeadm](https://pmcgrath.net/using-pod-security-policies-with-kubeadm)
