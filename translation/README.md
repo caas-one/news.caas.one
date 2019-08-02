@@ -62,8 +62,8 @@ XXX(文章名)<https://XXX（文章链接）>（已翻译）（windghoul）
 10. [Introducing Kustomize; Template-free Configuration Customization for Kubernetes](https://kubernetes.io/blog/2018/05/29/introducing-kustomize-template-free-configuration-customization-for-kubernetes/)正在翻译ing
 11. [How to Tag #Docker Images without Pulling them](https://dille.name/blog/2018/09/20/how-to-tag-docker-images-without-pulling-them/)已翻译(@esterwang)
 12. [Resizing Persistent Volumes using Kubernetes](https://kubernetes.io/blog/2018/07/12/resizing-persistent-volumes-using-kubernetes/) 已翻译(@esterwang)
-13. [Extending Kubernetes with Custom Resources and Operator Frameworks](https://speakerdeck.com/ianlewis/extending-kubernetes-with-custom-resources-and-operator-frameworks)
-14. [How, and When, to Deploy Serverless](https://thenewstack.io/how-and-when-to-deploy-serverless/)
+13. [Extending Kubernetes with Custom Resources and Operator Frameworks](https://speakerdeck.com/ianlewis/extending-kubernetes-with-custom-resources-and-operator-frameworks) 正在翻译
+14. [How, and When, to Deploy Serverless](https://thenewstack.io/how-and-when-to-deploy-serverless/) 正在翻译
 15. [In-depth introduction to Kubernetes admission webhooks](https://banzaicloud.com/blog/k8s-admission-webhooks/)
 16. [Debug a Kubernetes Service Locally with Telepresence](https://articles.microservices.com/debug-a-kubernetes-service-locally-with-telepresence-675eb6e94b09)
 17. [Distributed Tracing Infrastructure with Jaeger on Kubernetes](https://medium.com/@masroor.hasan/tracing-infrastructure-with-jaeger-on-kubernetes-6800132a677)
