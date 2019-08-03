@@ -1,0 +1,48 @@
+# 我们是开源的etcdadm！这就是Kubernetes在生产中的意义所在
+
+今天，我们很高兴地宣布Platform9是开源的[etcdadm](https://github.com/kubernetes-sigs/etcdadm)，可以在[GitHub上](https://github.com/kubernetes-sigs/etcdadm)的Apache v2.0许可下[使用](https://github.com/kubernetes-sigs/etcdadm)。
+
+我们已经在这个项目上工作了一段时间，现在我们很乐意并已经开始与开源社区分享这个项目，以简化生产etcd集群的设置和持续运营。
+
+受[kubeadm的](https://kubernetes.io/docs/reference/setup-tools/kubeadm/)启发，etcdadm为Kubernetes用户提供了一个可配置的**简单的命令行体验，**它是可以部署和运行**在任何地方** （本地，云端以及air-gapped environments）运行的安全etcd集群—— 内置支持恢复和可扩展性。
+
+## etcdadm提供：
+
+1. **可轻松部署**安全的etcd集群
+2. **从仲裁丢失中恢复** - 通过从现有的etcd备份轻松部署安全群集
+3. **扩展操作** - 轻松添加或删除etcd集群中的节点
+
+etcdadm可以**在任何Linux发行**版上**运行，**例如Ubuntu，CentOS和Container Linux。etcdadm是为Platform9的商业产品Platform9 Managed Kubernetes开发的。Platform9正在向开源社区贡献它，以简化生产etcd集群的设置和持续运营。
+
+## 看看这个工具的简短演示：
+
+[演示效果](https://cdn.rawgit.com/platform9/etcdadm/master/demo.svg)
+
+**访问GitHub上的etcdadm repo以了解更多信息** 
+
+------
+
+## 我们为什么要创建etcdadm？
+
+etcdadm的灵感来自于流行的kubeadm开源项目的用户体验。kubeadm为实例化Kubernetes集群提供了一个简单的命令行接口，但是目前还没有部署etcd集群。它只部署一个etcd实例，这对于Kubernetes生产环境来说是不够的。
+
+etcd是Kubernetes堆栈中的关键组件，用于存储Kubernetes集群的状态，包括节点和工作负载信息。需要一个etcd集群来保证Kubernetes集群的高可用性。
+
+**对于生产用途，在可用性和冗余是重要因素的情况下，将etcd作为集群运行至关重要。**建立一个安全的etcd集群 - 特别是在本地 - 是很难的。它涉及下载正确的二进制文件、在每个etcd节点上编写初始集群配置、设置和启动etcd。这是为安全连接配置证书颁发机构和证书的补充。在Platform9，我们设想了一个kubeadm类型的工具，它可以使用简单的init / join语义轻松创建一个安全的etcd集群，为用户降低复杂性。这是我们“etcdadm”的动机。
+
+安装etcd集群只能解决问题的一半。**“第二天(接下来)”的操作和管理etcd集群同样重要。**我们希望简化扩展和灾难恢复，这样一来单调乏味的工作就由工具来完成，而不是由Kubernetes用户来完成。我们设计etcdadm是为了方便从集群中添加或删除成员，并确保etcdadm通过从备份中轻松创建集群，帮助您从仲裁损失中恢复。
+
+etcdadm允许开发人员轻松创建安全的etcd集群，并允许操作团队在生产环境中安全有效地操作这些集群。在Platform9，我们致力于开源技术，这是[我们所做的一切的核心，我们有为](https://platform9.com/open-source/)开源社区做出贡献的历史。我们很自豪能够开放这个项目供行业使用，作为回馈Kubernetes社区的方式，推动现代软件交付。
+
+## Tech-talk：什么是etcd，什么是etcdadm，以及它对你的Kubernetes操作意味着什么？
+
+看看这个简短的视频，快速了解什么是etcd，它有哪些挑战，[etcdadm](https://github.com/kubernetes-sigs/etcdadm)如何帮助，一些关键用例，以及我们所看到的etcd的未来。
+
+[视频链接](https://www.youtube.com/embed/ifcdE0oSmeg?rel=0)
+
+## 下一步是什么：
+
+我们正在与Kubernetes集群生命周期特别兴趣小组（SIG）合作，以了解其他社区项目如何从etcdadm中受益，以及etcdadm应如何适应以满足这些项目的需求。
+
+我们欢迎您的反馈 - [请查看GitHub上的新etcdadm](https://github.com/kubernetes-sigs/etcdadm)并告诉我们您的想法！
+
