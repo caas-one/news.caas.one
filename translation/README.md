@@ -91,7 +91,7 @@ XXX(文章名)<https://XXX（文章链接）>（已翻译）（windghoul）
 39. [Spring Boot with Vault on Kubernetes](https://banzaicloud.com/blog/vault-java-spotguide/)
 40. [Service mesh data plane vs. control plane](https://blog.envoyproxy.io/service-mesh-data-plane-vs-control-plane-2774e720f7fc)
 41. [How to scale Microservices with Message Queues, Spring Boot, and Kubernetes](https://medium.freecodecamp.org/how-to-scale-microservices-with-message-queues-spring-boot-and-kubernetes-f691b7ba3acf)
-42. [Kubernetes Infrastructure](https://docs.okd.io/latest/architecture/infrastructure_components/kubernetes_infrastructure.htmn)
+42. [Kubernetes Infrastructure](https://docs.okd.io/latest/architecture/infrastructure_components/kubernetes_infrastructure.html)
 43. [Kubernetes vs. Docker: What Does It Really Mean?](https://www.sumologic.com/blog/devops/kubernetes-vs-docker/)
 44. [Deploy Your First Deep Learning Model On Kubernetes With Python, Keras, Flask, and Docker](https://medium.com/analytics-vidhya/deploy-your-first-deep-learning-model-on-kubernetes-with-python-keras-flask-and-docker-575dc07d9e76)
 45. [How to use Envoy as a Load Balancer in Kubernetes](https://blog.markvincze.com/how-to-use-envoy-as-a-load-balancer-in-kubernetes/)
@@ -131,7 +131,7 @@ XXX(文章名)<https://XXX（文章链接）>（已翻译）（windghoul）
 79. [Unit Testing with the Kubernetes Client Library](https://matt-rickard.com/kubernetes-unit-testing/) 已翻译(@esterwang)
 80. [Understanding resource limits in Kubernetes-memory](https://medium.com/@betz.mark/understanding-resource-limits-in-kubernetes-memory-6b41e9a955f9) 已翻译(@maxwell92)
 81. [Understanding resource limits in Kubernetes-cpu](https://medium.com/@betz.mark/understanding-resource-limits-in-kubernetes-memory-6b41e9a955f://medium.com/@betz.mark/understanding-resource-limits-in-kubernetes-cpu-time-9eff74d3161b) 已翻译(@maxwell92)
-82. [Testing Microservices, the sane way](https://medium.com/@copyconstruct/testing-microservices-the-sane-way-9bb31d158c16) 正在翻译ing（7月14日）
+82. [Testing Microservices, the sane way](https://medium.com/@copyconstruct/testing-microservices-the-sane-way-9bb31d158c16) 已翻译
 83. [Diving Deep Into The Golang Channels](https://codeburst.io/diving-deep-into-the-golang-channels-549fd4ed21a8) 已翻译(@windghoul)
 84. [Kubernetes-vs-Docker](https://www.sumologic.com/blog/kubernetes-vs-docker/) 已翻译（@ky11n、@wxppp、@zcxcurry30、@Bucky Barenes、@esterwang）
 85. [Optimizing-Kubernetes-resource-allocation-in-production](https://opensource.com/article/18/12/optimizing-kubernetes-resource-allocation-production?utm_campaign=intrel) 已翻译(@maxwell92)
