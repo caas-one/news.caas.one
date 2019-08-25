@@ -1,0 +1,116 @@
+我会说“启动” [Kubernetes](https://akomljen.com/tag/kubernetes/)集群是一项相对容易的工作。将应用程序部署到Kubernetes之上需要更多的工作，尤其是如果您是容器的新手。对于使用Docker的人来说，这也是一项相对简单的工作，但当然，您仍需要掌握Helm等新工具。然后，当你把所有的东西放在一起，当你试图在生产中运行你的应用程序时，你会发现有很多缺失的部分。也许Kubernetes并没有做什么，对吧?其实，Kubernetes是可扩展的，有一些插件或插件可以让一切更从容。
+
+### 什么是Kubernetes附加组件？
+
+简而言之，*插件扩展了Kubernetes的功能*。它们中有很多，你可能已经使用了一些。例如，网络插件或CNI，如Calico或Flannel，或CoreDNS（现在是默认的DNS管理器），或著名的KubernetesDashboard。我之所以说有名，是因为这可能是集群运行后你需要尝试部署的第一件事。上面列出的是一些核心组件，CNI必须具有，DNS也必须有相同的功能，以使您的集群正常运行。但是，一旦开始部署应用程序，您可以做的事情还有很多。安装Kubernetes插件以实现更高效的计算！
+
+### Cluster Autoscaler - CA.
+
+**Cluster Autoscaler根据利用率扩展您的集群节点。**如果您有挂起的pod，CA将扩展集群，如果节点未使用足够多，则它将缩小集群 - 默认设置为`0.5`并可配置`--scale-down-utilization-threshold`。你肯定不希望pod处于挂起状态，同时，你不想运行未充分利用的节点 ——这是浪费金钱!
+
+**使用案例：** AWS集群中有两个实例组或自动调节组。它们在两个可用区域1和2中运行。您希望根据利用率来扩展集群，但也希望在两个区域中具有相似数量的节点。此外，您还希望使用CA自动发现功能，因此就无需在CA中定义最小和最大节点数，因为这些节点已在自动缩放组中定义。并且您希望在主节点上部署CA.
+
+以下是通过Helm的CA示例安装，以匹配上述用例：
+
+```
+⚡ helm install --name autoscaler \
+    --namespace kube-system \
+    --set autoDiscovery.clusterName=k8s.test.akomljen.com \
+    --set extraArgs.balance-similar-node-groups=true \
+    --set awsRegion=eu-west-1 \
+    --set rbac.create=true \
+    --set rbac.pspEnabled=true \
+    --set nodeSelector."node-role\.kubernetes\.io/master"="" \
+    --set tolerations[0].effect=NoSchedule \
+    --set tolerations[0].key=node-role.kubernetes.io/master \
+    stable/cluster-autoscaler
+```
+
+您需要进行一些其他更改才能使其正常工作。有关更多详细信息，请查看此帖子 - [AWS上的Kubernetes Cluster Autoscaling](https://akomljen.com/kubernetes-cluster-autoscaling-on-aws/)。
+
+### Horizontal Pod Autoscaler - HPA
+
+***水平Pod自动调度器根据观察到的CPU利用率自动调整副本控制器（ReplicationController）、部署或副本集（ReplicaSet）中的Pod数量。支持自定义指标，也支持其他应用程序提供的指标。***
+
+HPA在Kubernetes领域并不新鲜，但是Banzai Cloud最近发布了[HPA Operator](https://github.com/banzaicloud/hpa-operator)，它简化了HPA。您需要做的就是为您的Deployment或StatefulSet提供注释，HPA operator 将完成剩下的工作。在[这里](https://github.com/banzaicloud/hpa-operator#annotations-explained)查看支持的注释。
+
+使用Helm安装HPA operator非常简单：
+
+```
+⚡ helm repo add akomljen-charts https://raw.githubusercontent.com/komljen/helm-charts/master/charts/
+
+⚡ helm install --name hpa \
+    --namespace kube-system \
+    akomljen-charts/hpa-operator
+
+⚡ kubectl get po --selector=release=hpa -n kube-system
+NAME                                  READY     STATUS    RESTARTS   AGE
+hpa-hpa-operator-7c4d47dd4-9khpv      1/1       Running   0          1m
+hpa-metrics-server-7766d7bc78-lnhn8   1/1       Running   0          1m
+```
+
+随着Metrics Server的部署，您还可以使用“kubectl top pods”命令。对于监控pod的CPU或内存使用情况可能很有用
+
+HPA可以从一系列聚合的API (' metrics.k8s。io”、“custom.metrics.k8s。io”和“external.metrics.k8s.io”)中获取度量。但是，通常HPA会使用metrics.k8API,由Heapster或Metrics Server提供的API(后者在Kubernetes 1.11中被弃用)。
+
+向部署添加注释后，您应该可以使用以下方法对其进行监控：
+
+```
+⚡ kubectl get hpa
+NAME       REFERENCE             TARGETS   MINPODS   MAXPODS   REPLICAS   AGE
+test-app   Deployment/test-app   0%/70%    1         4         1          10m
+```
+
+请记住，您在上面看到的CPU目标是基于这个特定pod的CPU请求定义的，而不是节点上可用的整个CPU。
+
+### Addon Resizer
+
+[Addon resizer](https://github.com/kubernetes/autoscaler/tree/master/addon-resizer)是一个有趣的插件，您可以在上面的场景中使用到Metrics Server。当您向集群部署更多的pod时，Metrics服务器最终将需要更多的资源。**Addon resizer容器监视Deployment（例如Metrics Server）中的另一个容器，并上下垂直伸缩依赖容器**Addon resizer可以根据节点数线性扩展Metrics Server。更多详情请查看官方文档。
+
+### Vertical Pod Autoscaler - VPA
+
+您需要为将在Kubernetes上部署的服务定义CPU和内存请求。如果您没有将默认CPU请求设置为`100m`或`0,1`可用CPU。资源请求将求助于`kube-scheduler`以确定运行特定pod的节点。但是，很难定义适合更多环境的“足够好”的值。**Vertical Pod Autoscaler根据pod使用的资源自动调整CPU和内存请求。**它使用Metrics Server获取pod指标。请记住，您仍需要手动定义资源限制。
+
+我不会在这里详述，因为VPA确实需要专门的博客文章，但有一些事情你应该知道：
+
+- VPA仍然是一个早期项目，所以要注意
+- 您的集群必须支持`MutatingAdmissionWebhooks`，默认情况下启用，因为Kubernetes 1.9
+- 它不能与HPA一起使用
+- 当资源请求更新时，它将重新启动所有pod，这是预期的类型
+
+### Descheduler
+
+“kube-scheduler”是Kubernetes中负责调度的组件。但是，由于Kubernetes的动态特性，有时候pod可能会出现在错误的节点上。您可以编辑现有资源，添加节点关联或（反）pod关联，或者您在某些服务器上有更多负载，而某些服务器几乎在空闲状态下运行。一旦pod运行，`kube-scheduler`将不会尝试重新调度它。根据环境的不同，您可能会有很多活动部件。
+
+**Descheduler会检查可以移动的pod，并根据定义的策略将其驱逐出去。**Descheduler不是默认的调度程序替代品，并且依赖于它。该项目目前处于Kubernetes孵化器中，尚未准备投产。但是，我发现它非常稳定，工作得很好。deschscheduler将作为CronJob在集群中运行。
+
+我写了一篇专门的文章[Meet a Kubernetes Descheduler](https://akomljen.com/meet-a-kubernetes-descheduler/)，你可以查看更多细节。
+
+### k8s Spot Rescheduler
+
+我试图解决在AWS上管理多个自动扩展组的问题，其中一个组是按需实例，其他组是spot。问题是，一旦您扩展了spot实例组，您就希望将pod从按需实例中移开，这样就可以将它缩小。**k8s spot recheduler试图通过将pod驱逐到可用的spot来减少点播实例的负载。** *实际上，重新调度程序可用于将任何节点组的负载移除到不同的节点组上。只需要j将其贴上适当的标签。*
+
+我还创建了一个Helm图表，以便于部署：
+
+```
+⚡ helm repo add akomljen-charts https://raw.githubusercontent.com/komljen/helm-charts/master/charts/
+
+⚡ helm install --name spot-rescheduler \
+    --namespace kube-system \
+    --set image.tag=v0.2.0 \
+    --set cmdOptions.delete-non-replicated-pods="true" \
+    akomljen-charts/k8s-spot-rescheduler
+```
+
+有关`cmdOptions`检查的完整列表，请[点击此处](https://github.com/pusher/k8s-spot-rescheduler#flags)。
+
+要使k8s spot recheduler正常工作，您需要标记您的节点：
+
+- 按需节点 - `node-role.kubernetes.io/worker: "true"`
+- 点节点 - `node-role.kubernetes.io/spot-worker: "true"`
+
+并`PreferNoSchedule`在按需实例上添加污点，以确保k8s spot rescheduler在做出调度决策时更喜欢spot。
+
+### 摘要
+
+请记住，上面的一些附加组件不兼容，无法协同工作！此外，我可能会错过一些有趣的插件，请在评论中告诉我们。请继续关注下一个。
