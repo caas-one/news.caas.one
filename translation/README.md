@@ -118,7 +118,7 @@ XXX(文章名)<https://XXX（文章链接）>（已翻译）（windghoul）
 66. [Tag Cleanup Daemon for VMware Harbor](https://github.com/HylandSoftware/Harbor.Tagd)
 67. [Kubernetes disaster recovery with Pipeline](https://banzaicloud.com/blog/k8s-disaster-recovery/)
 68. [IPVS-Based In-Cluster Load Balancing Deep Dive](https://kubernetes.io/blog/2018/07/09/ipvs-based-in-cluster-load-balancing-deep-dive/)
-69. [gRPC On HTTP/2: Engineering A Robust, High Performance Protocol](https://www.cncf.io/blog/2018/08/31/grpc-on-http-2-engineering-a-robust-high-performance-protocol/)
+69. [gRPC On HTTP/2: Engineering A Robust, High Performance Protocol](https://www.cncf.io/blog/2018/08/31/grpc-on-http-2-engineering-a-robust-high-performance-protocol/)已翻译(@sjh080815)
 70. [Understanding the Container Storage Interface (CSI)](https://medium.com/google-cloud/understanding-the-container-storage-interface-csi-ddbeb966a3b)
 71. [Using go mod download to speed up Golang Docker builds](https://medium.com/@petomalina/using-go-mod-download-to-speed-up-golang-docker-builds-707591336888)
 72. [Using Kubeless for Kubernetes Events](https://leebriggs.co.uk/blog/2018/10/16/using-kubeless-for-kubernetes-events.html)
