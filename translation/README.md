@@ -136,5 +136,5 @@ XXX(文章名)<https://XXX（文章链接）>（已翻译）（windghoul）
 84. [Kubernetes-vs-Docker](https://www.sumologic.com/blog/kubernetes-vs-docker/) 已翻译（@ky11n、@wxppp、@zcxcurry30、@Bucky Barenes、@esterwang）
 85. [Optimizing-Kubernetes-resource-allocation-in-production](https://opensource.com/article/18/12/optimizing-kubernetes-resource-allocation-production?utm_campaign=intrel) 已翻译(@maxwell92)
 86. [Least Privilege in Kubernetes Using Impersonation](https://johnharris.io/2019/08/least-privilege-in-kubernetes-using-impersonation/) 正在翻译@maxwell92
-87.[Operators and Controllers, What is the Difference?](https://octetz.com/posts/k8s-controllers-vs-operators)
-88.[Writing Kubernetes Custom Controllers](https://medium.com/@cloudark/kubernetes-custom-controllers-b6c7d0668fdf)  
+87. [Operators and Controllers, What is the Difference?](https://octetz.com/posts/k8s-controllers-vs-operators)
+88. [Writing Kubernetes Custom Controllers](https://medium.com/@cloudark/kubernetes-custom-controllers-b6c7d0668fdf)
