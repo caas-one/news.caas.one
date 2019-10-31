@@ -76,7 +76,7 @@ XXX(文章名)<https://XXX（文章链接）>（已翻译）（windghoul）
 24. [Container Networking Interface aka CNI](https://medium.com/@vikram.fugro/container-networking-interface-aka-cni-bdfe23f865cf)
 25. [Why You Should Not Neglect Your Developer’s Kubernetes Clusters](https://itnext.io/why-you-should-not-neglect-your-developers-kubernetes-clusters-a658c8ca0e78)
 26. [We’re open-sourcing etcdadm! Here’s what it means for Kubernetes in production](https://platform9.com/blog/were-open-sourcing-etcdadm-heres-what-it-means-for-kubernetes-in-production/)
-27. [Kubernetes: The Surprisingly Affordable Platform for Personal Projects](http://www.doxsey.net/blog/kubernetes--the-surprisingly-affordable-platform-for-personal-projects)
+27. [Kubernetes: The Surprisingly Affordable Platform for Personal Projects](http://www.doxsey.net/blog/kubernetes--the-surprisingly-affordable-platform-for-personal-projects)已翻译（@sjh080815）
 28. [Kubernetes Add-ons for more Efficient Computing](https://akomljen.com/kubernetes-add-ons-for-more-efficient-computing/)
 29. [Knative what’s that now?](https://medium.com/@grapesfrog/knative-whats-that-now-65041e585d3d)
 30. [Kubernetes and external DNS services](https://banzaicloud.com/blog/k8s-external-dns-route53/)
