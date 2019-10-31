@@ -125,7 +125,7 @@ XXX(文章名)<https://XXX（文章链接）>（已翻译）（windghoul）
 73. [Best practices and anti-patterns for containerized deployments](https://techbeacon.com/best-practices-anti-patterns-containerized-deployments)
 74. [Customizing Kubernetes Logging (Part 1)](https://medium.com/uptime-99/adopting-istio-in-your-kubernetes-clusters-a3e28ed6f4b7)
 75. [Adopting Istio in Your Kubernetes Clusters](https://medium.com/uptime-99/adopting-istio-in-your-kubernetes-clusters-a3e28ed6f4b7)
-76. [Rookout brings breakpoints back to Kubernetes](https://www.rookout.com/pr/rookout_brings_breakpoints_back_to-_kubernetes)
+76. [Rookout brings breakpoints back to Kubernetes](https://www.rookout.com/pr/rookout_brings_breakpoints_back_to-_kubernetes)已翻译（@sjh080815）
 77. [Effectively Managing Kubernetes Resources with Cost Monitoring](https://medium.com/kubecost/effectively-managing-kubernetes-with-cost-monitoring-96b54464e419)
 78. [Best practices for building Kubernetes Operators and stateful apps](https://cloud.google.com/blog/products/containers-kubernetes/best-practices-for-building-kubernetes-operators-and-stateful-apps)
 79. [Unit Testing with the Kubernetes Client Library](https://matt-rickard.com/kubernetes-unit-testing/) 已翻译(@esterwang)
