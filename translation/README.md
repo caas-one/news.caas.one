@@ -140,3 +140,4 @@ XXX(文章名)<https://XXX（文章链接）>（已翻译）（windghoul）
 88. [Writing Kubernetes Custom Controllers](https://medium.com/@cloudark/kubernetes-custom-controllers-b6c7d0668fdf)已翻译(@sjh080815)
 89. [Handling Client Requests Properly with Kubernetes](https://freecontent.manning.com/handling-client-requests-properly-with-kubernetes/?utm_sq=g6rhsr1fby)
 90. [Kubernetes admission controllers for secure deployments](https://sysdig.com/blog/kubernetes-admission-controllers/?utm_sq=g6qty0qqim)
+91. [How does 'kubectl exec' work?](https://erkanerol.github.io/post/how-kubectl-exec-works/?utm_sq=g7grrda0qt)
