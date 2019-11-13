@@ -141,3 +141,5 @@ XXX(文章名)<https://XXX（文章链接）>（已翻译）（windghoul）
 89. [Handling Client Requests Properly with Kubernetes](https://freecontent.manning.com/handling-client-requests-properly-with-kubernetes/?utm_sq=g6rhsr1fby)
 90. [Kubernetes admission controllers for secure deployments](https://sysdig.com/blog/kubernetes-admission-controllers/?utm_sq=g6qty0qqim)
 91. [How does 'kubectl exec' work?](https://erkanerol.github.io/post/how-kubectl-exec-works/?utm_sq=g7grrda0qt)
+92. [A Simple Introduction to Kubernetes Container Orchestration](https://www.freecodecamp.org/news/a-simple-introduction-to-kubernetes-container-orchestration/)
+93. [Too Many Choices: how to pick the right tool to manage your Docker clusters](https://www.freecodecamp.org/news/too-many-choices-how-to-pick-the-right-tool-to-manage-your-docker-clusters/)
