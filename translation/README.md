@@ -132,7 +132,7 @@ XXX(文章名)<https://XXX（文章链接）>（已翻译）（windghoul）
 75. [Adopting Istio in Your Kubernetes Clusters](https://medium.com/uptime-99/adopting-istio-in-your-kubernetes-clusters-a3e28ed6f4b7)
 76. [Rookout brings breakpoints back to Kubernetes](https://www.rookout.com/pr/rookout_brings_breakpoints_back_to-_kubernetes)已翻译（@sjh080815）
 77. [Effectively Managing Kubernetes Resources with Cost Monitoring](https://medium.com/kubecost/effectively-managing-kubernetes-with-cost-monitoring-96b54464e419)
-78. [Best practices for building Kubernetes Operators and stateful apps](https://cloud.google.com/blog/products/containers-kubernetes/best-practices-for-building-kubernetes-operators-and-stateful-apps)
+78. [Best practices for building Kubernetes Operators and stateful apps](https://cloud.google.com/blog/products/containers-kubernetes/best-practices-for-building-kubernetes-operators-and-stateful-apps)已翻译（@sjh080815）
 79. [Unit Testing with the Kubernetes Client Library](https://matt-rickard.com/kubernetes-unit-testing/) 已翻译(@esterwang)
 80. [Understanding resource limits in Kubernetes-memory](https://medium.com/@betz.mark/understanding-resource-limits-in-kubernetes-memory-6b41e9a955f9) 已翻译(@maxwell92)
 81. [Understanding resource limits in Kubernetes-cpu](https://medium.com/@betz.mark/understanding-resource-limits-in-kubernetes-memory-6b41e9a955f://medium.com/@betz.mark/understanding-resource-limits-in-kubernetes-cpu-time-9eff74d3161b) 已翻译(@maxwell92)
@@ -143,5 +143,5 @@ XXX(文章名)<https://XXX（文章链接）>（已翻译）（windghoul）
 86. [Least Privilege in Kubernetes Using Impersonation](https://johnharris.io/2019/08/least-privilege-in-kubernetes-using-impersonation/) 正在翻译@maxwell92
 87. [Operators and Controllers, What is the Difference?](https://octetz.com/posts/k8s-controllers-vs-operators)已翻译(@ky11n)
 88. [Writing Kubernetes Custom Controllers](https://medium.com/@cloudark/kubernetes-custom-controllers-b6c7d0668fdf)已翻译(@sjh080815)
-89. [Handling Client Requests Properly with Kubernetes](https://freecontent.manning.com/handling-client-requests-properly-with-kubernetes/?utm_sq=g6rhsr1fby)
+89. [Handling Client Requests Properly with Kubernetes](https://freecontent.manning.com/handling-client-requests-properly-with-kubernetes/?utm_sq=g6rhsr1fby)已翻译（@sjh080815）
 90. [Kubernetes admission controllers for secure deployments](https://sysdig.com/blog/kubernetes-admission-controllers/?utm_sq=g6qty0qqim)已翻译(@sjh080815)
