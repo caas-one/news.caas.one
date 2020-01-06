@@ -145,3 +145,4 @@ XXX(文章名)<https://XXX（文章链接）>（已翻译）（windghoul）
 93. [Too Many Choices: how to pick the right tool to manage your Docker clusters](https://www.freecodecamp.org/news/too-many-choices-how-to-pick-the-right-tool-to-manage-your-docker-clusters/)
 94. [Litmus: Journey of a storage e2e and chaos framework for Kubernetes](https://blog.mayadata.io/openebs/litmus-journey-of-a-storage-e2e-and-chaos-framework-for-kubernetes)
 95. [Providing chaos hooks to applications through Litmus Operator](https://medium.com/mayadata/litmus-chaos-operator-the-whys-hows-10a4519ad864)
+96. [Deploying apps on multiple Kubernetes clusters with Helm](https://medium.com/dailymotion/deploying-apps-on-multiple-kubernetes-clusters-with-helm-19ee2b06179e)
