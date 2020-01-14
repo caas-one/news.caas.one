@@ -14,8 +14,8 @@ Kubernetes提供`Namespaces`来允许在同一集群中分离Kubernetes对象的
 ![在这里插入图片描述](https://img-blog.csdnimg.cn/20191026214508409.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80Mjk5NjU5NQ==,size_16,color_FFFFFF,t_70)
 > 注意：截至本文发布之日，Azure Kubernetes服务（AKS）不支持多个节点池- 根据此GitHub，这项功能有待开发。
 
-# Kubernetes许可控制器
-为了将 Jenkins agent工作负载分离到特定的`node pool`/`InstanceGroup`(节点池/实例组)，我们转向Kubernetes Admission Controllers(许可控制器)。即使您不知道Kubernetes许可控制器是什么或做什么，但如果您曾经与Kubernetes集群进行交互，就有可能已经从中受益。例如，如果使用默认的`StorageClass`或`ServiceAccount`，而这就基于许可控制器。在这种情况下，我们将使用podnodeselector访问控制器。但是首先，我们必须为集群启用它。对于用于这个帖子中的KOPS的版本-`1.9.3`-默认情况下启用以下许可控制器（如您在kops 1.9的代码中看到的，该代码基于一组推荐的许可控制器）：
+# Kubernetes准入控制器
+为了将 Jenkins agent工作负载分离到特定的`node pool`/`InstanceGroup`(节点池/实例组)，我们转向Kubernetes Admission Controllers(准入控制器)。即使您不知道Kubernetes准入控制器是什么或做什么，但如果您曾经与Kubernetes集群进行交互，就有可能已经从中受益。例如，如果使用默认的`StorageClass`或`ServiceAccount`，而这就基于准入控制器。在这种情况下，我们将使用podnodeselector访问控制器。但是首先，我们必须为集群启用它。对于用于这个帖子中的KOPS的版本-`1.9.3`-默认情况下启用以下准入控制器（如您在kops 1.9的代码中看到的，该代码基于一组推荐的准入控制器）：
 ```bash
 - Initializers
     - NamespaceLifecycle
@@ -87,12 +87,12 @@ spec:
   kubeScheduler:
   ...
 ```
-如果您已有的配置条目，`kubeAPIServer`则只需将其添加`PodNodeSelector`到`admissionControl`列表的末尾。一旦你已经保存的更改，您将需要更新集群——使用命令`kops update cluster-yes`。如果这是一个现有的集群，那么您也必须执行滚动更新：`kops rolling-update cluster --yes`。
+如果您已有的配置条目，`kubeAPIServer`则只需将其添加`PodNodeSelector`到`admissionControl`列表的末尾。一旦你保存了更改，您将需要更新集群——使用命令`kops update cluster-yes`。如果这是一个现有的集群，那么您也必须执行滚动更新：`kops rolling-update cluster --yes`。
 
-> 注意：如果要在新集群上启用其他许可控制器，则应在应用配置之前执行此操作，否则将需要滚动更新所有集群节点。
+> 注意：如果要在新集群上启用其他准入控制器，则应在应用配置之前执行此操作，否则将需要滚动更新所有集群节点。
 
 # 将这些完成
-现在，我们已经启用了`PodNodeSelector`许可控制器，我们可以开始创建`node pools`和`namespaces`了。
+现在，我们已经启用了`PodNodeSelector`准入控制器，我们可以开始创建`node pools`和`namespaces`了。
 ## 节点池
 我们将创建两个`node pools`-一个用于Jenkins master，另一个用于Jenkins agent。
 
@@ -166,7 +166,7 @@ metadata:
       scheduler.alpha.kubernetes.io/node-selector: jenkinsType=agent
   name: jenkins-agents
 ```
-`PodNodeSelector`许可控制器使用`scheduler.alpha.kubernetes.io/node-selector`，根据创建pod的命名空间分配默认的nodeselector。这将导致在jenkins agents名称空间中创建所有pod，这些pod位于jenkins agents节点池中的节点上，并与jenkins masters分离。
+`PodNodeSelector`准入控制器使用`scheduler.alpha.kubernetes.io/node-selector`，根据创建pod的命名空间分配默认的nodeselector。这将导致在jenkins agents名称空间中创建所有pod，这些pod位于jenkins agents节点池中的节点上，并与jenkins masters分离。
 
 > 注意：podnodeselector还有一个基于文件的配置，它不仅允许您为特定名称空间指定默认nodeselector标签，还允许指定clusterdefaultnodeselector。但是，我还没有弄清楚如何将这种基于文件的配置用于kops。因此，如果您对此有任何想法，请在下面评论。跟踪此问题的GitHub问题。
 
@@ -215,7 +215,7 @@ subjects:
 ```
 上面链接中提供的示例与上面的配置之间的主要区别在于为`RoleBinding subjects`使用名称空间。
 
-现在，您可以使用`ServiceAccount`和`jenkins-agents` `namespace`我们根据这些说明创建的为您的Jenkins主服务器配置Kubernetes插件，并确保您的分布式Jenkins代理不会对您的Jenkins主服务器或Kubernetes集群上运行的任何其他工作负载产生负面影响。
+相关账号的权限设置已经完成, 您可以使用ServiceAccount和jenkins-agents namespace来为你的Jenkins主服务器配置Kubernetes插件。并确保您的分布式Jenkins代理不会对您的Jenkins主服务器或Kubernetes集群上运行的任何其他工作负载产生负面影响。
 
 现在，您可以使用我们根据这些说明创建的`ServiceAccount`和`jenkins-agents namespace`来为你的Jenkins master配置kubernetes插件，并确保您的分布式Jenkins agents不会对jenkins masters或您在kubernetes集群上运行的任何其他工作负载产生负面影响。
 
