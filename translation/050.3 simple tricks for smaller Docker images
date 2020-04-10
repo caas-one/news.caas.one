@@ -1,4 +1,4 @@
-  #3个小Docker图像的简单技巧
+  #3个减小Docker镜像的简单技巧
 [![Daniele Polencic](https://miro.medium.com/fit/c/96/96/0*HymaTcs2SrGd7_Ac.png)](https://medium.com/@danielepolencic?source=post_page-----cf2760645621----------------------)
 
 [Daniele Polencic](https://medium.com/@danielepolencic?source=post_page-----cf2760645621----------------------)
@@ -11,9 +11,9 @@ Follow
 
 *本文由来自Learnk8s.io的一名技术顾问——Daniele Polencic撰写。如需了解有关skills matter的新闻和文章，请在此处订阅我们的新闻稿*（https://goo.gl/forms/mjch7cju9d0t7xdp2）
 
-当涉及到建造Docker containers问题的时候，你应该尽力获得较小的图像。**共享图层且尺寸较小的图像可以更快地进行传输和部署。**。
+当涉及到建造Docker containers问题的时候，你应该尽力获得较小的镜像。**文件层既共享又小的镜像能够更快的进行传输和部署。**。
 
-但是，当你为每个“run”语句创建一个新层，并且在图像准备就绪之前需要产生中间的伪图层，你将如何将图像大小保持在可控范围之内呢？
+但是，当你为每个“run”语句创建一个新层，并且在镜像准备就绪之前需要产生中间的伪镜像层，你将如何将镜像大小保持在可控范围之内呢？
 
 你可能已经注意到大多数“dockerfile”在非官方用法中都有一些奇怪的技巧，比如：
 
@@ -31,29 +31,29 @@ RUN apt-get update
 RUN apt-get install vim
 
 ` `
-由于在docker 1.10上，`COPY`, `ADD` and `RUN`语句为图像添加了一个新图层。上一个示例创建了两个层，而不是一个。
+由于在docker 1.10上，`COPY`, `ADD` and `RUN`语句为镜像添加了一个新镜像层。上一个示例创建了两个层，而不是一个。
 
 ！[img]（https://miro.medium.com/freeze/max/60/1*opn1m4swcxlkdxusfpq8lg.gif？q＝20）
 
-**图层类似于git commits。**
+**镜像层类似于git commits。**
 
-Docker图层存储图像的前一版本和当前版本之间的不同之处。和git commits一样，如果您将它们与其他存储库或图像共享，这将会很方便。
+Docker镜像层存储镜像的前一版本和当前版本之间的不同之处。和git commits一样，如果您将它们与其他存储库或镜像像共享，这将会很方便。
 
-事实上，当您从注册表请求一个图像时，您只下载您还没有拥有的图层。这样可以更有效地共享图像。
+事实上，当您从注册表请求一个镜像像时，您只下载您还没有拥有的镜像层。这样可以更有效地共享镜像。
 
-但图像分层并不是没有代价的。
+但镜像分层并不是没有代价的。
 
-**图层占用空间**，图层越多，最终图像越大。Git存储库在这方面和它是相似的。存储库的大小随着图层数量的增加而增加，因为Git必须存储所提交（版本）之间的所有更改。
+**镜像层占用空间**，镜像层越多，最终镜像像越大。Git存储库在这方面和它是相似的。存储库的大小随着镜像层数量的增加而增加，因为Git必须存储所提交（版本）之间的所有更改。
 
 在过去，将多个“run”语句组合在一行是一种很好的做法，就像在第一个示例中一样。但现在不再是了。
 
-1。使用多阶段Docker构建将多个图层压缩为一个图层
+1。使用多阶段Docker构建将多个镜像层压缩为一个镜像层
 
-当一个Git存储库变大时，您可以选择将历史图层压缩成一个单一图层提交，然后将过去图层抹掉。
+当一个Git存储库变大时，您可以选择将历史镜像层压缩成一个单一镜像层提交，然后将过去镜像层抹掉。
 
 事实证明，通过一个多阶段的构建，你也可以在Docker中做类似的事情。
 
-在本例中，您将构建一个 Node.js container。
+在本例中，您将构建一个 Node.js 容器。
 
 让我们从“index.js”开始：
 
@@ -94,7 +94,7 @@ RUN npm install CMD ["npm", "start"]
 
 ` `
 
-您可以使用以下方法构建图像：
+您可以使用以下方法构建镜像：
 
 ` `
 $ docker build -t node-vanilla .
@@ -108,7 +108,7 @@ $docker run-p 3000:3000-ti--rm--init节点vanilla
 
 您应该能够访问[http://localhost:3000]（http://localhost:3000/）并受到* “Hello World!”*的问候。
 
-在“dockerfile”中有一个“copy”和一个“run”语句。因此，你应该会看到比基础图像多至少两个图层的图像：
+在“dockerfile”中有一个“copy”和一个“run”语句。因此，你应该会看到比基础镜像多至少两个镜像层的镜像：
 ` `
 $ docker history node-vanilla 
 IMAGE          CREATED BY                                      SIZE 
@@ -142,23 +142,23 @@ $ docker images | grep node-
 node-multi-stage   331b81a245b1   678MB node-vanilla       075d229d3f48   679MB
 
 ` `
-是的，最后一张图片稍微小一些。
+是的，最后一个镜像稍微小一些。
 
 不错！即使这是一个已经缩小过的应用程序，您也会减小它的总体大小。
 
-但图像仍然很大！
+但镜像像仍然很大！
 
 你能做些什么使它更小吗？
 
 >**不要错过下一个故事、实验或小贴士。**将新内容直接发送到您的收件箱，提升您在Docker和Kubernetes方面的专业技能。[立即订阅]（https://learnk8s.io/newsletter）
 
-2。在distroless的协助下删掉container中所有不必要的东西。
+2。在distroless的协助下删掉容器中所有不必要的东西。
 
-当前的图像提供node.js以及“yarn”、“npm”、“bash”和许多其他二进制文件。它也基于Ubuntu。所以你有一个完全成熟的操作系统，它有所有的小二进制文件和实用程序。
+当前的镜像提供node.js以及“yarn”、“npm”、“bash”和许多其他二进制文件。它也基于Ubuntu。所以你有一个完全成熟的操作系统，它有所有的小二进制文件和实用程序。
 
-运行container时不需要任何这些。唯一您需要的依赖项是node.js。
+运行容器时不需要任何这些。唯一您需要的依赖项是node.js。
 
-Docker container应该包装一个进程，并包含运行它的最小值。你不需要操作系统。
+Docker 容器应该包装一个进程，并包含运行它的最小值。你不需要操作系统。
 
 实际上，除了node.js，您可以删除所有内容。
 
@@ -172,7 +172,7 @@ Docker container应该包装一个进程，并包含运行它的最小值。你�
 
 这正是你需要的！
 
-您可以调整“dockerfile”以利用新的基础图像，如下所示：
+您可以调整“dockerfile”以利用新的基础镜像，如下所示：
 
 ` `
 FROM node:8 as build 
@@ -188,14 +188,14 @@ EXPOSE 3000
 CMD ["index.js"]
 ` `
 
-您可以像往常一样编译图像：
+您可以像往常一样编译镜像：
 
 ` `
 $ docker build -t node-distroless .
 
 ` `
 
-应用程序应正常运行。要验证是否仍然是这种情况，可以这样运行container：
+应用程序应正常运行。要验证是否仍然是这种情况，可以这样运行容器：
 
 ` `
 $ docker run -p 3000:3000 -ti --rm --init node-distroless
@@ -203,7 +203,7 @@ $ docker run -p 3000:3000 -ti --rm --init node-distroless
 ` `
 访问页面[http://localhost:3000]（http://localhost:3000/）。
 
-没有所有额外二进制文件的图像是否更小？
+没有所有额外二进制文件的镜像是否更小？
 
 ` `
 $ docker images | grep node-distroless 
@@ -212,44 +212,44 @@ node-distroless   7b4db3b7f1e5   76.7MB
 ` `
 **只有76.7MB！**
 
-比你以前的图像少600M！
+比你以前的镜像少600M！
 
 这是一个好消息！但当涉及到发行版时，你应该注意一些事情。
 
-当您的 container 正在运行，并且您希望检查它时，您可以使用以下方式连接到正在运行的 container ：
+当您的容器正在运行，并且您希望检查它时，您可以使用以下方式连接到正在运行的容器：
 ` `
 $docker exec-ti<insert_docker_id>bash
 ` `
-连接到一个正在运行的container上并且运行“bash”就好像建立一个ssh会话。
+连接到一个正在运行的容器上并且运行“bash”就好像建立一个ssh会话。
 
-但是，由于发行版是原始操作系统的精简版，因此没有额外的二进制文件。container里没有shell！
+但是，由于发行版是原始操作系统的精简版，因此没有额外的二进制文件。容器里没有shell！
 
-如果没有shell，如何连接到正在运行的container？
+如果没有shell，如何连接到正在运行的容器？
 
-你不能连接到container，这是一个既好又坏的消息。
+你不能连接到容器，这是一个既好又坏的消息。
 
-这是一个坏消息，因为您只能在container中执行二进制文件。唯一可以运行的二进制文件是node.js:
+这是一个坏消息，因为您只能在容器中执行二进制文件。唯一可以运行的二进制文件是node.js:
 
 ` `
 $docker exec-ti<insert_docker_id>node
 ` `
 
-这是一个好消息，因为攻击者如果利用您的应用程序并获得对container的访问权限，不会像访问shell那样造成太大的破坏。换句话说，更少的二进制文件意味着更小的大小和更高的安全性。但代价是更令人痛苦的调试。
+这是一个好消息，因为攻击者如果利用您的应用程序并获得对容器的访问权限，不会像访问shell那样造成太大的破坏。换句话说，更少的二进制文件意味着更小的大小和更高的安全性。但代价是更令人痛苦的调试。
 
->*请注意，也许您不应该在生产环境中附加和调试container。您应该更依赖于正确的日志记录和监视。*
+>*请注意，也许您不应该在生产环境中附加和调试容器。您应该更依赖于正确的日志记录和监视。*
 
 但是如果您关心调试和较小的大小呢？
 
-3。基于Alpine的较小基础图像
+3。基于Alpine的较小基础镜像
 
-您可以用基于Alpine的图像替换发行版的基础图像。
+您可以用基于Alpine的镜像替换发行版的基础镜像。
 
 [Alpine Linux]（https://alpineinux.org/）
 >*是基于*[*musl libc*]（https://www.musl-libc.org/）*和*[*busybox*]（https://www.busybox.net/）的面向安全的轻量级Linux发行版。
 
 换句话说，它是一种更小规模，更安全Linux发行版。
 
-你不应该认为他们的话是理所当然。让我们来检查一下图像是否更小。
+你不应该认为他们的话是理所当然。让我们来检查一下镜像是否更小。
 
 您应该调整“dockerfile”并使用“node:8-alpine”：
 
@@ -268,7 +268,7 @@ CMD ["npm", "start"]
 
 ` `
 
-您可以使用以下方法构建图像：
+您可以使用以下方法构建镜像：
 
 ` `
 $ docker build -t node-alpine .
@@ -284,16 +284,16 @@ node-alpine   aa1f85f8e724   69.7MB
 
 **69.7兆！**
 
-比发行版图像还要小！
+比发行版镜像还要小！
 
-与发行版不同，您可以连接到到正在运行的container上吗？是时候弄清楚这件事了。
+与发行版不同，您可以连接到到正在运行的容器上吗？是时候弄清楚这件事了。
 
-让我们先启动 container ：
+让我们先启动容器：
 ` `
 $ docker run -p 3000:3000 -ti --rm --init node-alpine Example app listening on port 3000!
 
 ` `
-您可以使用以下方式附加到正在运行的 container ：
+您可以使用以下方式附加到正在运行的容器：
 ` `
 $ docker exec -ti 9d8e97e307d7 bash 
 OCI runtime exec failed: exec failed: container_linux.go:296: 
@@ -302,17 +302,17 @@ not found in $PATH": unknown
 
 ` `
 
-运气很不好。但也许这个container有一个shell？  
+运气很不好。但也许这个容器有一个shell？  
 
 ` `
 $ docker exec -ti 9d8e97e307d7 sh / #
 ` `
 
-对！您仍然可以连接到一个正在运行的 container ，并且您将获得一个整体较小的图像。
+对！您仍然可以连接到一个正在运行的容器，并且您将获得一个整体较小的镜像。
 
 听起来很有希望，但有一个问题。
 
-基于Alpine的图像是基于MUSLC的，这是C的一个可替代标准库。
+基于Alpine的镜像是基于MUSLC的，这是C的一个可替代标准库。
 
 但是，大多数Linux发行版（如Ubuntu、Debian和CentOS）都基于glibc。这两个库应该实现与内核相同的接口。
 
@@ -324,35 +324,35 @@ $ docker exec -ti 9d8e97e307d7 sh / #
 
 在编译应用程序时，大多数情况下都是根据特定的libc编译的。如果您希望将它们与另一个libc一起使用，则必须重新编译它们。
 
-换句话说，用 Alpine 图像构建 container 可能会导致意想不到的结果，因为标准C库是不同的。
+换句话说，用 Alpine 图像构建容器可能会导致意想不到的结果，因为标准C库是不同的。
 
 您可能会注意到差异，特别是在处理预编译二进制文件时，如NoDE.JS C++扩展。
 
 例如，PhantomJS预构建包不适用于Alpine。
 
-#你应该选择什么样的基本图像？
+#你应该选择什么样的基本镜像？
 
-你用的是 Alpine，distroless还是vanilla 的图像？
+你用的是 Alpine，distroless还是vanilla 的镜像？
 
-**如果您在生产环境中运行，并且担心安全性**，那么发行版图像可能更合适。
+**如果您在生产环境中运行，并且担心安全性**，那么发行版镜像可能更合适。
 
 添加到Docker映像的每个二进制文件都会给整个应用程序增加一定的风险。
 
-您可以通过在 container 中只安装一个二进制文件来降低总体风险。
+您可以通过在容器中只安装一个二进制文件来降低总体风险。
 
-例如，如果攻击者能够利用在发行版上运行的应用程序中的漏洞进行攻击，他们将无法在 container 中生成shell，因为没有shell！
+例如，如果攻击者能够利用在发行版上运行的应用程序中的漏洞进行攻击，他们将无法在容器中生成shell，因为没有shell！
 
 >*请注意*[*最小化攻击表面积是OWASP*推荐的（https://www.owasp.org/index.php/minimize_Attack_Surface_Area）*。*
 
-**如果您关心的是图像大小并且不计代价，那么您应该切换到基于 Alpine 的图片**。
+**如果您关心的是镜像大小并且不计代价，那么您应该切换到基于 Alpine 的镜像**。
 
 这些通常非常小，但以兼容性为代价。 Alpine 使用了稍微不同的标准C库——Muslc。您可能会不时遇到一些兼容性问题。更多例子[这里]（https://github.com/grpc/grpc/issues/8528）和[这里]（https://github.com/grpc/grpc/issues/6126）。
 
-**Vanilla基础图像非常适合测试和开发**。
+**Vanilla基础镜像非常适合测试和开发**。
 
 它很大，但提供的体验与安装Ubuntu的工作站相同。此外，您还可以访问操作系统中可用的所有二进制文件。
 
-重述图像大小：
+重述镜像大小：
 
 node:8 681MB
 
@@ -374,9 +374,9 @@ node:8-alpine 69.7MB
 
 #成为Kubernetes中部署和缩放Docker container 的专家
 
-一次处理一个 container 很容易，但是当您有数千个 container 要构建、部署和监视时会发生什么？
+一次处理一个容器很容易，但是当您有数千个容器要构建、部署和监视时会发生什么？
 
-Kubernetes实际上是 container 协调器，帮助您轻松管理Docker container 。
+Kubernetes实际上是容器协调器，帮助您轻松管理Docker 容器。
 
 从我们的实践课程入手，学习如何掌握云计算中的可伸缩性。
 
