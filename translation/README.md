@@ -154,3 +154,5 @@ XXX(文章名)<https://XXX（文章链接）>（已翻译）（windghoul）
 102. [Why the Age of the Cloud Native Security Platform Is Here to Stay](https://thenewstack.io/why-the-age-of-the-cloud-native-security-platform-is-here-to-stay/)
 103. [Serverless Series Part 3/3 – Serverless and Harness – Better Together](https://harness.io/2019/09/serverless-series-part-3-3-serverless-and-harness-better-together/)
 104. [Yubl’s road to Serverless — Part 1, Overview](https://hackernoon.com/yubls-road-to-serverless-part-1-overview-ca348370acde)
+105. [Understanding Kubernetes networking: pods](https://medium.com/google-cloud/understanding-kubernetes-networking-pods-7117dd28727)
+106. [Understanding Kubernetes networking: services](https://medium.com/google-cloud/understanding-kubernetes-networking-services-f0cb48e4cc82)
