@@ -156,3 +156,4 @@ XXX(文章名)<https://XXX（文章链接）>（已翻译）（windghoul）
 104. [Yubl’s road to Serverless — Part 1, Overview](https://hackernoon.com/yubls-road-to-serverless-part-1-overview-ca348370acde)
 105. [Understanding Kubernetes networking: pods](https://medium.com/google-cloud/understanding-kubernetes-networking-pods-7117dd28727)
 106. [Understanding Kubernetes networking: services](https://medium.com/google-cloud/understanding-kubernetes-networking-services-f0cb48e4cc82)
+107. [The State of the Service Mesh, Part 2：Availability](https://www.nginx.com/blog/state-of-service-mesh-part-2-availability/)
